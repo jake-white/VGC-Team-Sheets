@@ -1,0 +1,144 @@
+<!doctype HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/table.css">
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/parse.js"></script>
+	</head>
+	<body>
+		<p>Teamsheet generator by Jake White. Regex/styling guide taken from <a href="https://github.com/Tapin42/premier_team_list">Tapin</a>.</p>
+		<p>Paste your team here:</p>
+		<textarea id="roster" rows="30" cols="50"></textarea>
+		<br>
+		<input type="button" id="OK" value="Generate"></input>
+
+		<table id="outputTable">
+        <tr>
+            <td class="space-entry">
+                <table class="ptable">
+                    <tr><th class="label">Pokemon</th><td id="pokemon" class="value">&nbsp;</td>
+                    	<td class="label"></td><td id="gender" class = "value"></td></tr>
+                    <tr><th class="label">Ability</th><td id="ability" class="value">&nbsp;</td>
+                    	<td class="label">Lv</td><td id="level" class = "value"></td></tr>
+                    <tr><th class="label">Held Item</th><td id="heldItem" class="value">&nbsp;</td>
+                    	<td class="label">HP</td><td id="hp" class = "value"></td></tr>
+                    <tr><th class="label">Move 1</th><td id="move1" class="value">&nbsp;</td>
+                    	<td class="label">Att</td><td id="atk" class = "value"></td></tr>
+                    <tr><th class="label">Move 2</th><td id="move2" class="value">&nbsp;</td>
+                    	<td class="label">Def</td><td id="def" class = "value"></td></tr>
+                    <tr><th class="label">Move 3</th><td id="move3" class="value">&nbsp;</td>
+                    	<td class="label">S. Att</td><td id="spatk" class = "value"></td></tr>
+                    <tr><th class="label">Move 4</th><td id="move4" class="value">&nbsp;</td>
+                    	<td class="label">S. Def</td><td id="spdef" class = "value"></td></tr>
+                    <tr><th class="label">Nature</th><td id="nature" class="value">&nbsp;</td>
+                    	<td class="label">Spe</td><td id="spe" class = "value"></td></tr>
+                </table>
+            </td>
+            <td class="space-entry">
+                <table class="ptable">
+                    <tr><th class="label">Pokemon</th><td id="pokemon" class="value">&nbsp;</td>
+                    	<td class="label"></td><td id="gender" class = "value"></td></tr>
+                    <tr><th class="label">Ability</th><td id="ability" class="value">&nbsp;</td>
+                    	<td class="label">Lv</td><td id="level" class = "value"></td></tr>
+                    <tr><th class="label">Held Item</th><td id="heldItem" class="value">&nbsp;</td>
+                    	<td class="label">HP</td><td id="hp" class = "value"></td></tr>
+                    <tr><th class="label">Move 1</th><td id="move1" class="value">&nbsp;</td>
+                    	<td class="label">Att</td><td id="atk" class = "value"></td></tr>
+                    <tr><th class="label">Move 2</th><td id="move2" class="value">&nbsp;</td>
+                    	<td class="label">Def</td><td id="def" class = "value"></td></tr>
+                    <tr><th class="label">Move 3</th><td id="move3" class="value">&nbsp;</td>
+                    	<td class="label">S. Att</td><td id="spatk" class = "value"></td></tr>
+                    <tr><th class="label">Move 4</th><td id="move4" class="value">&nbsp;</td>
+                    	<td class="label">S. Def</td><td id="spdef" class = "value"></td></tr>
+                    <tr><th class="label">Nature</th><td id="nature" class="value">&nbsp;</td>
+                    	<td class="label">Spe</td><td id="spe" class = "value"></td></tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="space-entry">
+                <table class="ptable">
+                    <tr><th class="label">Pokemon</th><td id="pokemon" class="value">&nbsp;</td>
+                    	<td class="label"></td><td id="gender" class = "value"></td></tr>
+                    <tr><th class="label">Ability</th><td id="ability" class="value">&nbsp;</td>
+                    	<td class="label">Lv</td><td id="level" class = "value"></td></tr>
+                    <tr><th class="label">Held Item</th><td id="heldItem" class="value">&nbsp;</td>
+                    	<td class="label">HP</td><td id="hp" class = "value"></td></tr>
+                    <tr><th class="label">Move 1</th><td id="move1" class="value">&nbsp;</td>
+                    	<td class="label">Att</td><td id="atk" class = "value"></td></tr>
+                    <tr><th class="label">Move 2</th><td id="move2" class="value">&nbsp;</td>
+                    	<td class="label">Def</td><td id="def" class = "value"></td></tr>
+                    <tr><th class="label">Move 3</th><td id="move3" class="value">&nbsp;</td>
+                    	<td class="label">S. Att</td><td id="spatk" class = "value"></td></tr>
+                    <tr><th class="label">Move 4</th><td id="move4" class="value">&nbsp;</td>
+                    	<td class="label">S. Def</td><td id="spdef" class = "value"></td></tr>
+                    <tr><th class="label">Nature</th><td id="nature" class="value">&nbsp;</td>
+                    	<td class="label">Spe</td><td id="spe" class = "value"></td></tr>
+                </table>
+            </td>
+            <td class="space-entry">
+                <table class="ptable">
+                    <tr><th class="label">Pokemon</th><td id="pokemon" class="value">&nbsp;</td>
+                    	<td class="label"></td><td id="gender" class = "value"></td></tr>
+                    <tr><th class="label">Ability</th><td id="ability" class="value">&nbsp;</td>
+                    	<td class="label">Lv</td><td id="level" class = "value"></td></tr>
+                    <tr><th class="label">Held Item</th><td id="heldItem" class="value">&nbsp;</td>
+                    	<td class="label">HP</td><td id="hp" class = "value"></td></tr>
+                    <tr><th class="label">Move 1</th><td id="move1" class="value">&nbsp;</td>
+                    	<td class="label">Att</td><td id="atk" class = "value"></td></tr>
+                    <tr><th class="label">Move 2</th><td id="move2" class="value">&nbsp;</td>
+                    	<td class="label">Def</td><td id="def" class = "value"></td></tr>
+                    <tr><th class="label">Move 3</th><td id="move3" class="value">&nbsp;</td>
+                    	<td class="label">S. Att</td><td id="spatk" class = "value"></td></tr>
+                    <tr><th class="label">Move 4</th><td id="move4" class="value">&nbsp;</td>
+                    	<td class="label">S. Def</td><td id="spdef" class = "value"></td></tr>
+                    <tr><th class="label">Nature</th><td id="nature" class="value">&nbsp;</td>
+                    	<td class="label">Spe</td><td id="spe" class = "value"></td></tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="space-entry">
+                <table class="ptable">
+                    <tr><th class="label">Pokemon</th><td id="pokemon" class="value">&nbsp;</td>
+                    	<td class="label"></td><td id="gender" class = "value"></td></tr>
+                    <tr><th class="label">Ability</th><td id="ability" class="value">&nbsp;</td>
+                    	<td class="label">Lv</td><td id="level" class = "value"></td></tr>
+                    <tr><th class="label">Held Item</th><td id="heldItem" class="value">&nbsp;</td>
+                    	<td class="label">HP</td><td id="hp" class = "value"></td></tr>
+                    <tr><th class="label">Move 1</th><td id="move1" class="value">&nbsp;</td>
+                    	<td class="label">Att</td><td id="atk" class = "value"></td></tr>
+                    <tr><th class="label">Move 2</th><td id="move2" class="value">&nbsp;</td>
+                    	<td class="label">Def</td><td id="def" class = "value"></td></tr>
+                    <tr><th class="label">Move 3</th><td id="move3" class="value">&nbsp;</td>
+                    	<td class="label">S. Att</td><td id="spatk" class = "value"></td></tr>
+                    <tr><th class="label">Move 4</th><td id="move4" class="value">&nbsp;</td>
+                    	<td class="label">S. Def</td><td id="spdef" class = "value"></td></tr>
+                    <tr><th class="label">Nature</th><td id="nature" class="value">&nbsp;</td>
+                    	<td class="label">Spe</td><td id="spe" class = "value"></td></tr>
+                </table>
+            </td>
+            <td class="space-entry">
+                <table class="ptable">
+                    <tr><th class="label">Pokemon</th><td id="pokemon" class="value">&nbsp;</td>
+                    	<td class="label"></td><td id="gender" class = "value"></td></tr>
+                    <tr><th class="label">Ability</th><td id="ability" class="value">&nbsp;</td>
+                    	<td class="label">Lv</td><td id="level" class = "value"></td></tr>
+                    <tr><th class="label">Held Item</th><td id="heldItem" class="value">&nbsp;</td>
+                    	<td class="label">HP</td><td id="hp" class = "value"></td></tr>
+                    <tr><th class="label">Move 1</th><td id="move1" class="value">&nbsp;</td>
+                    	<td class="label">Att</td><td id="atk" class = "value"></td></tr>
+                    <tr><th class="label">Move 2</th><td id="move2" class="value">&nbsp;</td>
+                    	<td class="label">Def</td><td id="def" class = "value"></td></tr>
+                    <tr><th class="label">Move 3</th><td id="move3" class="value">&nbsp;</td>
+                    	<td class="label">S. Att</td><td id="spatk" class = "value"></td></tr>
+                    <tr><th class="label">Move 4</th><td id="move4" class="value">&nbsp;</td>
+                    	<td class="label">S. Def</td><td id="spdef" class = "value"></td></tr>
+                    <tr><th class="label">Nature</th><td id="nature" class="value">&nbsp;</td>
+                    	<td class="label">Spe</td><td id="spe" class = "value"></td></tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+	</body>
+</html>

@@ -1,0 +1,402 @@
+
+<!-- saved from url=(0043)http://tapin42.github.io/premier_team_list/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<style>
+@media screen {
+    table {
+        border-collapse: collapse;
+    }
+    .interactive {
+        display: inline;
+    }
+    #boxLayout {
+        display: box;
+        display: -webkit-box;
+        display: -moz-box;
+    }
+    #boxLayout p {
+        padding-right: 50px;
+    }
+    #help {
+        box-flex: 0;
+    }
+    #inputDiv {
+        position: relative;
+        top: 30px;
+    }
+    #inText {
+        box-flex: 1;
+    }
+    .printHead {
+        display: none;
+    }
+    .space-entry {
+        width: 50%;
+        padding: 10px 10px 10px 10px;
+    }
+    #outputTable {
+        width: 80%;
+        border: 0px;
+    }
+    .ptable {
+        display: none;
+        width: 100%;
+    }
+    .ptable th {
+        padding: 5px 10px 5px 3px;
+    }
+    .ptable td {
+        border: 1px solid #cccccc;
+        padding: 5px 3px 5px 5px;
+    }
+    .ptable .label {
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: right;
+        white-space: nowrap;
+        width: 20%;
+    }
+    .ptable .value {
+        font-weight: normal;
+        text-align: left;
+        width: 80%;
+    }
+    .megaWarn {
+        color: red;
+    }
+}
+@media print {
+    @page {
+        margin-top: 2.5cm;
+        margin-left: 2.5cm;
+        margin-right: 2.5cm;
+    }
+    table {
+        border-collapse: collapse;
+    }
+    .interactive {
+        display: none;
+    }
+    .printHead {
+        display: inline;
+        line-height: 1.5;
+    }
+    #printTitle {
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center; 
+        padding-bottom: 10px;       
+    }
+    #outputTable {
+        width: 100%;
+        border: 0px;
+    }
+    .raPH {
+        width: 20%;
+        text-align: right;
+        font-size: 10pt;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding-bottom: 3px;
+    }
+    .space-entry {
+        width: 50%;
+        padding: 10px 10px 10px 10px;
+    }
+    .ptable {
+        width: 100%;
+        display: inline;
+        border: 1px solid black;
+    }
+    .ptable td, th {
+        border: 2px solid black;
+        padding: 3px 3px 3px 3px;
+    }
+    .ptable .label {
+        font-family: sans-serif;
+        font-size: 10pt;
+        font-weight: bold;
+        text-align: right;
+        white-space: nowrap;
+        width: 20%;
+    }
+    .ptable .value {
+        font-weight: normal;
+        font-size: 10pt;
+        text-align: left;
+        white-space: nowrap;
+        width: 80%;
+    }
+}
+</style>
+</head>
+<body><div id="StayFocusd-infobar" style="display:none;">
+    <img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png">
+    <span id="StayFocusd-infobar-msg"></span>
+    <span id="StayFocusd-infobar-links">
+        <a id="StayFocusd-infobar-never-show">hide forever</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a id="StayFocusd-infobar-hide">hide once</a>
+    </span>
+</div>
+    <div class="printHead">
+        <div id="printTitle">Pokémon Video Game Team List</div>
+        <div class="raPH">
+            Name:<br>
+            Player ID:<br>
+            Event Name:<br>
+            Age Division:<br>
+            Birth Date:<br>
+        </div>
+        <hr>
+    </div>
+    <div class="interactive">
+        <h2>Input:</h2>
+        <div id="boxLayout">
+            <p id="help">
+                <b>Use the following format for all Pokemon:</b><br>
+                <br>
+                <i>Pokemon</i> @ <i>Item</i><br>
+                Ability: <i>ability</i><br>
+                <i>nature</i> Nature<br>
+                - <i>Move 1</i><br>
+                - <i>Move 2</i><br>
+                - <i>Move 3</i><br>
+                - <i>Move 4</i><br>
+                <br>
+                <span class="megaWarn">Red text</span> indicates a Mega Pokemon.<br> 
+                Double-check that you've included the <b>non-Mega</b><br>
+                ability, or you risk failing the team check.
+            </p>
+            <div id="inputDiv">
+                <textarea id="inText" rows="10" cols="80" autofocus="" placeholder="Paste your roster here"></textarea>
+                <br>
+                <input type="button" onclick="populateTables()" value="OK">
+                <input type="button" onclick="printTables()" value="Print">
+                <input type="button" onclick="clearTables()" value="Clear">
+            </div>
+        </div>
+        <h2>Output:</h2>
+    </div>
+    <table id="outputTable">
+        <tbody><tr>
+            <td class="space-entry">
+                <table class="ptable">
+                    <tbody><tr><th class="label">Pokemon</th><td id="pokemon" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Ability</th><td id="ability" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Held Item</th><td id="heldItem" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 1</th><td id="move1" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 2</th><td id="move2" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 3</th><td id="move3" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 4</th><td id="move4" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Nature</th><td id="nature" class="value">&nbsp;</td></tr>
+                </tbody></table>
+            </td>
+            <td class="space-entry">
+                <table class="ptable">
+                    <tbody><tr><th class="label">Pokemon</th><td id="pokemon" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Ability</th><td id="ability" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Held Item</th><td id="heldItem" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 1</th><td id="move1" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 2</th><td id="move2" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 3</th><td id="move3" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 4</th><td id="move4" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Nature</th><td id="nature" class="value">&nbsp;</td></tr>
+                </tbody></table>
+            </td>
+        </tr>
+        <tr>
+            <td class="space-entry">
+                <table class="ptable">
+                    <tbody><tr><th class="label">Pokemon</th><td id="pokemon" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Ability</th><td id="ability" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Held Item</th><td id="heldItem" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 1</th><td id="move1" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 2</th><td id="move2" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 3</th><td id="move3" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 4</th><td id="move4" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Nature</th><td id="nature" class="value">&nbsp;</td></tr>
+                </tbody></table>
+            </td>
+            <td class="space-entry">
+                <table class="ptable">
+                    <tbody><tr><th class="label">Pokemon</th><td id="pokemon" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Ability</th><td id="ability" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Held Item</th><td id="heldItem" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 1</th><td id="move1" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 2</th><td id="move2" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 3</th><td id="move3" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 4</th><td id="move4" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Nature</th><td id="nature" class="value">&nbsp;</td></tr>
+                </tbody></table>
+            </td>
+        </tr>
+        <tr>
+            <td class="space-entry">
+                <table class="ptable">
+                    <tbody><tr><th class="label">Pokemon</th><td id="pokemon" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Ability</th><td id="ability" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Held Item</th><td id="heldItem" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 1</th><td id="move1" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 2</th><td id="move2" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 3</th><td id="move3" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 4</th><td id="move4" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Nature</th><td id="nature" class="value">&nbsp;</td></tr>
+                </tbody></table>
+            </td>
+            <td class="space-entry">
+                <table class="ptable">
+                    <tbody><tr><th class="label">Pokemon</th><td id="pokemon" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Ability</th><td id="ability" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Held Item</th><td id="heldItem" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 1</th><td id="move1" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 2</th><td id="move2" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 3</th><td id="move3" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Move 4</th><td id="move4" class="value">&nbsp;</td></tr>
+                    <tr><th class="label">Nature</th><td id="nature" class="value">&nbsp;</td></tr>
+                </tbody></table>
+            </td>
+        </tr>
+    </tbody></table>
+    <script src="./premier_team_list_files/jquery.min.js.download"></script>
+    <script>
+var populateTables = function () {
+    var parsed = showdown_parser.parse($("#inText").val());
+
+    $.each($(".ptable"), function( i, elt) {
+        if (i < parsed.length) {
+            $(this).show();
+            poke = parsed[i];
+            if (poke.warnAboutMega) {
+                $(this).find('#pokemon').text(poke.pokemon).addClass('megaWarn');
+                $(this).find("#ability").text(poke.ability).addClass('megaWarn');
+            } else {
+                $(this).find("#pokemon").text(poke.pokemon).removeClass('megaWarn');
+                $(this).find("#ability").text(poke.ability).removeClass('megaWarn');
+            }
+            $(this).find("#heldItem").text(poke.heldItem);
+            poke.moves.length > 0 && $(this).find("#move1").text(poke.moves[0]);
+            poke.moves.length > 1 && $(this).find("#move2").text(poke.moves[1]);
+            poke.moves.length > 2 && $(this).find("#move3").text(poke.moves[2]);
+            poke.moves.length > 3 && $(this).find("#move4").text(poke.moves[3]);
+            $(this).find("#nature").text(poke.nature);
+        } else {
+            $(this).hide();
+            $(this).find("#pokemon").text('').removeClass('megaWarn');
+            $(this).find("#ability").text('').removeClass('megaWarn');
+            $(this).find("#heldItem").text('');
+            $(this).find("#move1").text('');
+            $(this).find("#move2").text('');
+            $(this).find("#move3").text('');
+            $(this).find("#move4").text('');
+            $(this).find("#nature").text('');
+        }
+    });
+};
+
+var clearTables = function () {
+    $("#inText").val('');
+    populateTables();
+};
+
+var printTables = function () {
+    $.each($(".ptable"), function() {
+        $(this).show();
+    });
+    window.print();
+    populateTables();
+};
+
+var showdown_parser = (function() {
+
+    var nameLinePat = /^(.+?)\s?(\([^\)]*\))?\s?(?:\([MF]\))? @ (.*)$/;
+    var abilityLinePat = /^Ability: (.*)$/;
+    var natureLinePat = /^(.*) Nature$/;
+    var moveLinePat = /^-\s?(.*)$/;
+
+    return {
+        parse: function (data) {
+            var allPokes = [];
+            var lines = data.split('\n');
+
+            var curPoke = {};
+            var bits;
+
+            function finalizePoke(cur, all) {
+                
+                if (cur.pokemon) {
+                    // Mega check
+                    if (cur.pokemon.indexOf('-Mega') > -1) {
+                        cur.warnAboutMega = true;
+                    }
+
+                    // Rotom formes, just say "Rotom".
+                    if (cur.pokemon.indexOf('Rotom') === 0) {
+                        cur.pokemon = 'Rotom';
+                    }
+                }
+
+                if (cur.moves) {
+                    // Hidden Power; don't give it away!
+                    for (var i=0; i<cur.moves.length; i++) {
+                        if (cur.moves[i].indexOf('Hidden Power') === 0) {
+                            cur.moves[i] = 'Hidden Power';
+                        }
+                    }
+                }
+
+                all.push(cur);
+            }
+
+            for (var i=0; i<lines.length; i++) {
+                var curLine = lines[i].trim();
+
+                if (curLine.length === 0) {
+                    if (Object.keys(curPoke).length) {
+                        finalizePoke(curPoke, allPokes);
+                    }
+                    curPoke = {};
+                } else if (nameLinePat.test(curLine)) {
+                    bits = nameLinePat.exec(curLine);
+                    console.log(bits);
+
+                    // If bits[2] is length 3, then it's '(M)' or '(F)'.  Which isn't a Pokemon.
+                    if (bits[2] && bits[2].length !== 3) {
+                        curPoke.nickname = bits[1];
+                        curPoke.pokemon = bits[2].slice(1,bits[2].length-1);
+                        curPoke.heldItem = bits[3];
+                    } else {
+                        curPoke.pokemon = bits[1];
+                        curPoke.heldItem = bits[3];
+                    }
+                } else if (abilityLinePat.test(curLine)) {
+                    bits = abilityLinePat.exec(curLine);
+
+                    curPoke.ability = bits[1];
+                } else if (natureLinePat.test(curLine)) {
+                    bits = natureLinePat.exec(curLine);
+
+                    curPoke.nature = bits[1];
+                } else if (moveLinePat.test(curLine)) {
+                    bits = moveLinePat.exec(curLine);
+
+                    if (curPoke.moves) {
+                        curPoke.moves.push(bits[1]);
+                    } else {
+                        curPoke.moves = [bits[1]];
+                    }
+                }
+            }
+
+            if (Object.keys(curPoke).length) {
+                finalizePoke(curPoke, allPokes);
+            }
+
+            return allPokes;
+        }
+    }
+})();
+    </script>
+
+
+</body></html>

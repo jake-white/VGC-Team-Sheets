@@ -1,0 +1,123 @@
+@media screen {
+    table {
+        border-collapse: collapse;
+    }
+    .interactive {
+        display: inline;
+    }
+    #boxLayout {
+        display: box;
+        display: -webkit-box;
+        display: -moz-box;
+    }
+    #boxLayout p {
+        padding-right: 50px;
+    }
+    #help {
+        box-flex: 0;
+    }
+    #inputDiv {
+        position: relative;
+        top: 30px;
+    }
+    #inText {
+        box-flex: 1;
+    }
+    .printHead {
+        display: none;
+    }
+    .space-entry {
+        width: 50%;
+        padding: 10px 10px 10px 10px;
+    }
+    #outputTable {
+        width: 80%;
+        border: 0px;
+    }
+    .ptable {
+        display: none;
+        width: 100%;
+    }
+    .ptable th {
+        padding: 5px 10px 5px 3px;
+    }
+    .ptable td {
+        border: 1px solid #cccccc;
+        padding: 5px 3px 5px 5px;
+    }
+    .ptable .label {
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: right;
+        white-space: nowrap;
+        width: 20%;
+    }
+    .ptable .value {
+        font-weight: normal;
+        text-align: left;
+        width: 80%;
+    }
+}
+@media print {
+    @page {
+        margin-top: 2.5cm;
+        margin-left: 2.5cm;
+        margin-right: 2.5cm;
+    }
+    table {
+        border-collapse: collapse;
+    }
+    .interactive {
+        display: none;
+    }
+    .printHead {
+        display: inline;
+        line-height: 1.5;
+    }
+    #printTitle {
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center; 
+        padding-bottom: 10px;       
+    }
+    #outputTable {
+        width: 100%;
+        border: 0px;
+    }
+    .raPH {
+        width: 20%;
+        text-align: right;
+        font-size: 10pt;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding-bottom: 3px;
+    }
+    .space-entry {
+        width: 50%;
+        padding: 10px 10px 10px 10px;
+    }
+    .ptable {
+        width: 100%;
+        display: inline;
+        border: 1px solid black;
+    }
+    .ptable td, th {
+        border: 2px solid black;
+        padding: 3px 3px 3px 3px;
+    }
+    .ptable .label {
+        font-family: sans-serif;
+        font-size: 10pt;
+        font-weight: bold;
+        text-align: right;
+        white-space: nowrap;
+        width: 20%;
+    }
+    .ptable .value {
+        font-weight: normal;
+        font-size: 10pt;
+        text-align: left;
+        white-space: nowrap;
+        width: 80%;
+    }
+}
