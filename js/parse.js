@@ -11,6 +11,7 @@ All Pokémon are listed exactly as they appear in the ingame Battle Team, includ
 If any of your Pokémon have the move Hidden Power, write it as \"HP (X)\" with the (X) stating the elemental type. \
 If the information on this sheet does not match the Battle Team exactly, penalties may be incurred.";
 
+
 $( document ).ready(function() {
     $('#OK').click(generate);
     $('#print').click(printFunction);

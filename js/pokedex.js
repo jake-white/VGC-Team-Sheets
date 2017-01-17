@@ -11430,7 +11430,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     },
     "w": 180.0
   },
-  "Oricorio-Fire": {
+  "Oricorio": {
     "t1": "Fire",
     "t2": "Flying",
     "bs": {
@@ -11443,7 +11443,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     },
     "w": 3.4
   },
-  "Oricorio-Electric": {
+  "Oricorio-Pompom": {
     "t1": "Electric",
     "t2": "Flying",
     "bs": {
@@ -11456,7 +11456,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     },
     "w": 3.4
   },
-  "Oricorio-Psychic": {
+  "Oricorio-Pa'u": {
     "t1": "Psychic",
     "t2": "Flying",
     "bs": {
@@ -11469,7 +11469,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     },
     "w": 3.4
   },
-  "Oricorio-Ghost": {
+  "Oricorio-Sensu": {
     "t1": "Ghost",
     "t2": "Flying",
     "bs": {
