@@ -143,6 +143,27 @@
     height: 100%;
 }
 
+#formatting {    
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+#formatting p {    
+    font-size: 14px;
+    font-family: "Courier New";
+}
+
+.columnview {
+    margin-left: 1em;
+}
+
+#textbox {
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+
 #warning {
 	font-size: 15px;
 	text-align: center;
@@ -151,3 +172,36 @@
 .blank {	
     text-decoration: underline;
 }
+
+.wrapper{
+    max-width:1247px;
+}
+.header{
+    color: #ffffff;
+    background:#1e3864;
+    border-bottom: 5px solid #b3e784;
+    box-shadow:inset 1px 1px 0 rgba(255,255,255,.6),0px 2px 2px rgba(0,0,0,.15);
+    min-height:50px;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav,.nav li,.nav-play,.nav-play li{
+    display:block;
+    list-style:none;
+    margin:0;
+    padding:0;
+    float:left;
+}
+
+.nav{
+    padding:15px 6px 15px 6px;
+}
+
+body { 
+    margin: 0; 
+}
+
