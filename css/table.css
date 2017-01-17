@@ -73,24 +73,18 @@
     .printHead {
         display: inline;
         line-height: 1.5;
+        padding-left: 40px;
     }
     #printTitle {
         font-family: sans-serif;
         font-weight: bold;
         text-align: center; 
-        padding-bottom: 10px;       
+        font-size: 25px;
+        padding-bottom: 30px;       
     }
     #outputTable {
         width: 100%;
         border: 0px;
-    }
-    .raPH {
-        width: 20%;
-        text-align: right;
-        font-size: 10pt;
-        font-family: sans-serif;
-        font-weight: bold;
-        padding-bottom: 3px;
     }
     .space-entry {
         width: 50%;
@@ -107,7 +101,7 @@
     }
     .ptable .label {
         font-family: sans-serif;
-        font-size: 10pt;
+        font-size: 15pt;
         font-weight: bold;
         text-align: right;
         white-space: nowrap;
@@ -115,9 +109,45 @@
     }
     .ptable .value {
         font-weight: normal;
-        font-size: 10pt;
+        font-size: 15pt;
         text-align: left;
         white-space: nowrap;
         width: 80%;
     }
+}
+
+.columns {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+
+
+.container {
+    text-align: right;
+    font-size: 15pt;
+    font-family: sans-serif;
+    font-weight: bold;
+	margin-left: 2.5cm;
+}
+
+#primary {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#secondary {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#warning {
+	font-size: 15px;
+	text-align: center;
+}
+
+.blank {	
+    text-decoration: underline;
 }
