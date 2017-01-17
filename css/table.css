@@ -201,7 +201,8 @@
     padding:15px 6px 15px 6px;
 }
 
-body { 
+body, html { 
+    font-family: Open Sans;
     margin: 0; 
 }
 
