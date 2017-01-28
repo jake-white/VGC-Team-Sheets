@@ -206,3 +206,10 @@ body, html {
     margin: 0; 
 }
 
+#adcontent {
+    display: block;
+    margin: auto;
+    width: 468px;
+    height: 60px;
+    padding-bottom: 20px;
+}
