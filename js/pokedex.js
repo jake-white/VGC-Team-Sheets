@@ -5853,6 +5853,19 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     },
     "w": 29.9
   },
+  "Gastrodon-East": {
+    "t1": "Water",
+    "t2": "Ground",
+    "bs": {
+      "hp": 111,
+      "at": 83,
+      "df": 68,
+      "sa": 92,
+      "sd": 82,
+      "sp": 39
+    },
+    "w": 29.9
+  },
   "Gible": {
     "t1": "Dragon",
     "t2": "Ground",
@@ -6454,9 +6467,9 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     "w": 0.3,
     "ab": "Levitate"
   },
-  "Rotom-C": {
+  "Rotom-Frost": {
     "t1": "Electric",
-    "t2": "Ghost",
+    "t2": "Ice",
     "bs": {
       "hp": 50,
       "at": 65,
@@ -6468,9 +6481,9 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     "w": 0.3,
     "ab": "Levitate"
   },
-  "Rotom-F": {
+  "Rotom-Fan": {
     "t1": "Electric",
-    "t2": "Ghost",
+    "t2": "Flying",
     "bs": {
       "hp": 50,
       "at": 65,
@@ -6482,9 +6495,9 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     "w": 0.3,
     "ab": "Levitate"
   },
-  "Rotom-H": {
+  "Rotom-Heat": {
     "t1": "Electric",
-    "t2": "Ghost",
+    "t2": "Fire",
     "bs": {
       "hp": 50,
       "at": 65,
@@ -6496,9 +6509,9 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     "w": 0.3,
     "ab": "Levitate"
   },
-  "Rotom-S": {
+  "Rotom-Mow": {
     "t1": "Electric",
-    "t2": "Ghost",
+    "t2": "Grass",
     "bs": {
       "hp": 50,
       "at": 65,
@@ -6510,9 +6523,9 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     "w": 0.3,
     "ab": "Levitate"
   },
-  "Rotom-W": {
+  "Rotom-Wash": {
     "t1": "Electric",
-    "t2": "Ghost",
+    "t2": "Water",
     "bs": {
       "hp": 50,
       "at": 65,
@@ -7875,7 +7888,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     },
     "w": 68.0
   },
-  "Landorus-T": {
+  "Landorus-Therian": {
     "t1": "Ground",
     "t2": "Flying",
     "bs": {
@@ -8322,6 +8335,45 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     },
     "w": 92.5
   },
+  "Sawsbuck-Summer": {
+    "t1": "Normal",
+    "t2": "Grass",
+    "bs": {
+      "hp": 80,
+      "at": 100,
+      "df": 70,
+      "sa": 60,
+      "sd": 70,
+      "sp": 95
+    },
+    "w": 92.5
+  },
+  "Sawsbuck-Autumn": {
+    "t1": "Normal",
+    "t2": "Grass",
+    "bs": {
+      "hp": 80,
+      "at": 100,
+      "df": 70,
+      "sa": 60,
+      "sd": 70,
+      "sp": 95
+    },
+    "w": 92.5
+  },
+  "Sawsbuck-Winter": {
+    "t1": "Normal",
+    "t2": "Grass",
+    "bs": {
+      "hp": 80,
+      "at": 100,
+      "df": 70,
+      "sa": 60,
+      "sd": 70,
+      "sp": 95
+    },
+    "w": 92.5
+  },
   "Scolipede": {
     "t1": "Bug",
     "t2": "Poison",
@@ -8615,7 +8667,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     },
     "w": 61.0
   },
-  "Thundurus-T": {
+  "Thundurus-Therian": {
     "t1": "Electric",
     "t2": "Flying",
     "bs": {
@@ -8666,7 +8718,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     },
     "w": 63.0
   },
-  "Tornadus-T": {
+  "Tornadus-Therian": {
     "t1": "Flying",
     "bs": {
       "hp": 79,
@@ -11443,7 +11495,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     },
     "w": 3.4
   },
-  "Oricorio-Pompom": {
+  "Oricorio-Pom-Pom": {
     "t1": "Electric",
     "t2": "Flying",
     "bs": {
@@ -11541,6 +11593,18 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sa": 55,
       "sd": 75,
       "sp": 82
+    },
+    "w": 25.0
+  },
+  "Lycanroc-Dusk": {
+    "t1": "Rock",
+    "bs": {
+      "hp": 75,
+      "at": 117,
+      "df": 65,
+      "sa": 55,
+      "sd": 65,
+      "sp": 110
     },
     "w": 25.0
   },
@@ -12344,7 +12408,57 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     },
     "w": 22.2,
   },
-
+  "Poipole": {
+    "t1": "Poison",
+    "bs": {
+      "hp": 67,
+      "at": 73,
+      "df": 67,
+      "sa": 73,
+      "sd": 67,
+      "sp": 73
+    },
+    "w": 4.0,
+  },
+  "Naganadel": {
+    "t1": "Poison",
+	"t2": "Dragon",
+    "bs": {
+      "hp": 73,
+      "at": 73,
+      "df": 73,
+      "sa": 127,
+      "sd": 73,
+      "sp": 121
+    },
+    "w": 150.0,
+  },
+  "Stakataka": {
+    "t1": "Rock",
+	"t2": "Steel",
+    "bs": {
+      "hp": 61,
+      "at": 131,
+      "df": 211,
+      "sa": 53,
+      "sd": 101,
+      "sp": 13
+    },
+    "w": 820.0,
+  },
+  "Blacephalon": {
+    "t1": "Fire",
+	"t2": "Ghost",
+    "bs": {
+      "hp": 53,
+      "at": 127,
+      "df": 53,
+      "sa": 151,
+      "sd": 79,
+      "sp": 107
+    },
+    "w": 13.0,
+  }
 });
 
 delete POKEDEX_SM['Gengar'].ab;
