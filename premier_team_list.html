@@ -142,11 +142,12 @@
     <div class="printHead">
         <div id="printTitle">Pokémon Video Game Team List</div>
         <div class="raPH">
-            Name:<br>
+            First Name:<br>
+			Event Dates:<br>
+			Surname:<br>
             Player ID:<br>
-            Event Name:<br>
+            Date of Birth:<br>
             Age Division:<br>
-            Birth Date:<br>
         </div>
         <hr>
     </div>
@@ -281,7 +282,7 @@ var populateTables = function () {
             poke.moves.length > 3 && $(this).find("#move4").text(poke.moves[3]);
             $(this).find("#nature").text(poke.nature);
         } else {
-            $(this).hide();
+            $(this).hide();	
             $(this).find("#pokemon").text('').removeClass('megaWarn');
             $(this).find("#ability").text('').removeClass('megaWarn');
             $(this).find("#heldItem").text('');
