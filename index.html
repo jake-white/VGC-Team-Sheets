@@ -2,6 +2,7 @@
 <!doctype HTML>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/table.css">
 		<script src="js/jquery-3.1.1.min.js"></script>
 		<script src="js/pokedex.js"></script>
@@ -63,7 +64,7 @@
     		</div>
             <div id="textbox">
                 <p>Teamsheet generator by <a href="https://twitter.com/squirrelboyVGC">Jake White</a>. Regex/styling guide taken from <a href="https://github.com/Tapin42/premier_team_list">Tapin</a>.</p>
-                <p>Last updated: 6/3/2018. Up to date with game type and team name requirements!</p>
+                <p>Last updated: 8/23/2018. Up to date with game type and team name requirements! Thanks to <a href="https://twitter.com/JeanMarcVGC>@JeanMarcVGC</a> for updating things :)</p>
                 <a href="rawsheet.pdf">Raw Teamsheet Download</a>
                 <p>Paste your team <span style="color: red">here</span>:</p>
         		<textarea id="roster" rows="30" cols="50"></textarea>
@@ -91,7 +92,14 @@
 					<div class="namecol"> 
 					  <div class="field"> 
 					    <div class="row"> 
-					      <div class="label">Name:</div> 
+					      <div class="label">First Name:</div> 
+					      <div class="data"></div> 
+					    </div>
+					  </div>
+					  <br>
+					  <div class="field"> 
+					    <div class="row"> 
+					      <div class="label">Surname:</div> 
 					      <div class="data"></div> 
 					    </div>
 					  </div>
@@ -105,23 +113,21 @@
 					  <br>
 					  <div class="field"> 
 					    <div class="row"> 
-					      <div class="label">Age Division:</div> 
+					      <div class="label">Date of Birth:</div> 
 					      <div class="data"></div> 
 					    </div>
 					  </div>
+					  <br>
+					  <div class="field"> 
+					    <div class="row"> 
+					      <div class="label">Age Division:	Juniors <input type="checkbox"> Seniors <input type="checkbox"> Masters <input type="checkbox"></input></div>
+					    </div>
+					  </div>
                       <br>
-                      <div class="field"> 
-                        <div class="row"> 
-                          <div class="label">Team Number/Name:</div> 
-                          <div class="data"></div> 
-                        </div>
-                      </div>
 					</div>
 					<br>
 		        </div>
 	           	<div id="secondary">
-
-
 					<div class="namecol"> 
 					  <div class="field"> 
 					    <div class="row"> 
@@ -139,14 +145,20 @@
 					  <br>
 					  <div class="field"> 
 					    <div class="row"> 
-					      <div class="label">Date of Birth:</div> 
-					      <div class="data"></div> 
+					      <div class="label"></div> 
 					    </div>
 					  </div>
-                      <br>
+					  <br>
+					  <div class="field"> 
+                        <div class="row"> 
+                          <div class="label">Team Number/Name:</div> 
+                          <div class="data"></div> 
+                        </div>
+                      </div>
+					  <br>
                       <div class="field"> 
                         <div class="row"> 
-                          <div class="cartlabel">Game:  Cartridge / Digital</div> 
+                          <div class="cartlabel">Game:  Cartridge <input type="checkbox"> Digital <input type="checkbox"></div> 
                         </div>
                       </div>
 					  <br>
@@ -284,9 +296,16 @@
         </tr>
     </table>
 
-    <p id="warning">This Battle Team List matches the Battle Team used in the listed event exactly.
-All Pokémon are listed exactly as they appear in the ingame Battle Team, including stats and attack order.
-If any of your Pokémon have the move Hidden Power, write it as "HP (X)" with the (X) stating the elemental type.
-If the information on this sheet does not match the Battle Team exactly, penalties may be incurred.</p>
+    <p id="warning"><u><b>Notes:</b></u><br>
+	Please fill out this Team List using the language to which the player's game is set.<br>
+	<br>
+	This team list must match the Battle Team used in the listed event exactly. <b>All Pokémon must be listed exactly as they appear in the in-game Battle Team, including stats and<br>
+	attack order.</b> If the information on this sheet does not match the Battle Team exactly, penalties may be incurred.<br>
+	<br>
+	If your Pokémon is of a particular <b>Forme</b> (e.g. Landorus–Therian), <b>Regional Variant</b> (e.g. Alolan Persian), is the size of a <b>Totem Pokémon</b> (e.g. Totem Araquanid), <b>etc.</b>, include this in<br>
+	the "Pokémon" field<br>
+	<br>
+	If any of your Pokémon have the move <b>Hidden Power</b>, write it as "HP (X)", with the (X) stating the Type—for example "HP (Fire)". 
+	</p>
 	</body>
 </html>

@@ -60,7 +60,7 @@
 }
 @media print {
     @page {
-        margin-top: 2.5cm;
+        margin-top: 1cm;
         margin-left: 2.5cm;
         margin-right: 2.5cm;
     }
@@ -134,7 +134,7 @@
 #primary {
     float: left;
     width: 50%;
-    height: 100%;
+    height: 50%;
 }
 
 #secondary {
@@ -198,7 +198,7 @@
 }
 
 .nav{
-    padding:15px 6px 15px 6px;
+    padding:10px 6px 10px 6px;
 }
 
 body, html { 
