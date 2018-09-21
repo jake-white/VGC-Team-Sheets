@@ -5893,7 +5893,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     },
     "w": 750.0
   },
-  "Giratina-O": {
+  "Giratina-Origin": {
     "t1": "Ghost",
     "t2": "Dragon",
     "bs": {
@@ -7834,7 +7834,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 325.0,
     "ab": "Pressure"
   },
-  "Kyurem-B": {
+  "Kyurem-Black": {
     "t1": "Dragon",
     "t2": "Ice",
     "bs": {
@@ -7848,7 +7848,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 325.0,
     "ab": "Teravolt"
   },
-  "Kyurem-W": {
+  "Kyurem-White": {
     "t1": "Dragon",
     "t2": "Ice",
     "bs": {
@@ -10930,6 +10930,20 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     },
     "w": 305.0,
     "ab": "Aura Break"
+  },
+  "Zygarde-10%": {
+    "t1": "Dragon",
+    "t2": "Ground",
+    "bs": {
+      "hp": 54,
+      "at": 100,
+      "df": 71,
+      "sa": 61,
+      "sd": 85,
+      "sp": 115
+    },
+    "w": 305.0,
+    "ab": "Aura Break"
   }
 });
 
@@ -12379,6 +12393,30 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sa": 127,
       "sd": 89,
       "sp": 79
+    },
+    "w": 230.0,
+  },
+  "Necrozma-Dusk-Mane": {
+    "t1": "Psychic",
+    "bs": {
+      "hp": 97,
+      "at": 157,
+      "df": 127,
+      "sa": 113,
+      "sd": 109,
+      "sp": 77
+    },
+    "w": 230.0,
+  },
+  "Necrozma-Dawn-Wings": {
+    "t1": "Psychic",
+    "bs": {
+      "hp": 97,
+      "at": 113,
+      "df": 109,
+      "sa": 157,
+      "sd": 127,
+      "sp": 77
     },
     "w": 230.0,
   },
