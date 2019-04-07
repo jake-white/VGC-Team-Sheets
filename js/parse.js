@@ -44,9 +44,13 @@ var generate = function(){
 				monList[monList.length-1].species = species_line[2].slice(1,species_line[2].length-1);
 				monList[monList.length-1].item = species_line[3].trim();
 			}
+			if(POKEDEX_SM[monList[monList.length-1].species]["gender"]!=undefined){
+				monList[monList.length-1].gender=POKEDEX_SM[monList[monList.length-1].species]["gender"];
+			}
 		}
-		else if(abilityLinePat.test(lines[i])){
+		else if(abilityLinePat.test(lines[i])&&monList[monList.length-1].ability===""){
 			monList[monList.length-1].ability = abilityLinePat.exec(lines[i])[1];
+			monList[monList.length-1]=SPECIAL_FORME_FILTERING(monList[monList.length-1]);
 		}
 		else if(natureLinePat.test(lines[i])){
 			monList[monList.length-1].nature = natureLinePat.exec(lines[i])[1];
@@ -124,7 +128,7 @@ var generate = function(){
 
 function mon() {
     this.species = "";
-    this.nature = "";
+    this.nature = "Serious";
     this.ability = "";
     this.item = "";
     this.move1 = "";
@@ -201,6 +205,28 @@ function CALC_HP_ADV(species, evs, ivs, level) {
         total = Math.floor((base * 2 + ivs + Math.floor(evs / 4)) * level / 100) + level + 10;
     }
     return total;
+}
+
+function SPECIAL_FORME_FILTERING(mon){
+	if(mon.species.includes("Pikachu")&&species_line[1].trim()!=="Pikachu")
+	{
+		mon.species="Pikachu";
+		mon.gender="M";
+		mon.ability="Static";
+	}
+	else if(mon.species==="Scizor-Mega"||mon.species==="Blaziken-Mega"){
+		mon.species=mon.species.replace("-Mega","");
+	}
+	else if(mon.species.includes("-")&&mon.species!=="Porygon-Z"){
+		if(POKEDEX_SM[mon.species]["ab"]===mon.ability){
+			mon.ability=POKEDEX_SM[mon.species.split("-")[0]]["ab"];
+		}
+		mon.species=mon.species.split("-")[0];
+	}
+	if(POKEDEX_SM[mon.species]["gender"]!=undefined){
+		mon.gender=POKEDEX_SM[mon.species]["gender"];
+	}
+	return mon;
 }
 
 function CALC_STAT_ADV(species, evs, ivs, nature, level, statName) {    
