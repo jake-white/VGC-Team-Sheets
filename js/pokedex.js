@@ -10222,7 +10222,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Shadow Tag",
     "isAlternateForme": true
   },
-  "Glalie=Mega": {
+  "Glalie-Mega": {
     "t1": "Ice",
     "bs": {
       "hp": 80,
