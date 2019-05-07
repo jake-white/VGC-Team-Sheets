@@ -24,6 +24,7 @@ var POKEDEX_RBY = {
       "sp": 130,
       "sl": 60
     },
+    "ab":"Rock Head",
     "w": 59.0
   },
   "Alakazam": {
@@ -37,6 +38,7 @@ var POKEDEX_RBY = {
       "sp": 120,
       "sl": 135
     },
+    "ab":"Synchronize",
     "w": 48.0
   },
   "Arbok": {
@@ -66,6 +68,7 @@ var POKEDEX_RBY = {
     "w": 155.0
   },
   "Articuno": {
+    "gender": "",
     "t1": "Ice",
     "t2": "Flying",
     "bs": {
@@ -166,6 +169,7 @@ var POKEDEX_RBY = {
     "w": 2.9
   },
   "Chansey": {
+    "gender": "F",
     "t1": "Normal",
     "bs": {
       "hp": 250,
@@ -304,6 +308,7 @@ var POKEDEX_RBY = {
     "w": 0.8
   },
   "Ditto": {
+    "gender": "",
     "t1": "Normal",
     "bs": {
       "hp": 48,
@@ -562,7 +567,7 @@ var POKEDEX_RBY = {
       "sl": 130
     },
     "w": 40.5,
-    "ab": "Levitate"
+    "ab": "Cursed Body"
   },
   "Geodude": {
     "t1": "Rock",
@@ -718,6 +723,7 @@ var POKEDEX_RBY = {
     "ab": "Levitate"
   },
   "Hitmonchan": {
+    "gender": "M",
     "t1": "Fighting",
     "bs": {
       "hp": 50,
@@ -731,6 +737,7 @@ var POKEDEX_RBY = {
     "w": 50.2
   },
   "Hitmonlee": {
+    "gender": "M",
     "t1": "Fighting",
     "bs": {
       "hp": 50,
@@ -813,6 +820,7 @@ var POKEDEX_RBY = {
     "ab": "Volt Abdsorb"
   },
   "Jynx": {
+    "gender": "F",
     "t1": "Ice",
     "t2": "Psychic",
     "bs": {
@@ -883,6 +891,7 @@ var POKEDEX_RBY = {
     "ab": "Shed Skin"
   },
   "Kangaskhan": {
+    "gender": "F",
     "t1": "Normal",
     "bs": {
       "hp": 105,
@@ -893,6 +902,7 @@ var POKEDEX_RBY = {
       "sp": 90,
       "sl": 40
     },
+    "ab": "Early Bird",
     "w": 80.0
   },
   "Kingler": {
@@ -1111,6 +1121,7 @@ var POKEDEX_RBY = {
     "ab": "Shed Skin"
   },
   "Mew": {
+    "gender": "",
     "t1": "Psychic",
     "bs": {
       "hp": 100,
@@ -1125,6 +1136,7 @@ var POKEDEX_RBY = {
     "ab": "Synchronize"
   },
   "Mewtwo": {
+    "gender": "",
     "t1": "Psychic",
     "bs": {
       "hp": 106,
@@ -1135,9 +1147,11 @@ var POKEDEX_RBY = {
       "sp": 130,
       "sl": 154
     },
+    "ab":"Pressure",
     "w": 122.0
   },
   "Moltres": {
+    "gender": "",
     "t1": "Fire",
     "t2": "Flying",
     "bs": {
@@ -1179,6 +1193,7 @@ var POKEDEX_RBY = {
     "w": 30.0
   },
   "Nidoking": {
+    "gender": "M",
     "t1": "Poison",
     "t2": "Ground",
     "bs": {
@@ -1193,6 +1208,7 @@ var POKEDEX_RBY = {
     "w": 62.0
   },
   "Nidoqueen": {
+    "gender": "F",
     "t1": "Poison",
     "t2": "Ground",
     "bs": {
@@ -1207,6 +1223,7 @@ var POKEDEX_RBY = {
     "w": 60.0
   },
   "Nidoran-F": {
+    "gender": "F",
     "t1": "Poison",
     "bs": {
       "hp": 55,
@@ -1220,6 +1237,7 @@ var POKEDEX_RBY = {
     "w": 7.0
   },
   "Nidoran-M": {
+    "gender": "M",
     "t1": "Poison",
     "bs": {
       "hp": 46,
@@ -1233,6 +1251,7 @@ var POKEDEX_RBY = {
     "w": 9.0
   },
   "Nidorina": {
+    "gender": "F",
     "t1": "Poison",
     "bs": {
       "hp": 70,
@@ -1246,6 +1265,7 @@ var POKEDEX_RBY = {
     "w": 20.0
   },
   "Nidorino": {
+    "gender": "M",
     "t1": "Poison",
     "bs": {
       "hp": 61,
@@ -1382,6 +1402,7 @@ var POKEDEX_RBY = {
       "sp": 91,
       "sl": 70
     },
+    "ab":"Keen Eye",
     "w": 39.5
   },
   "Pidgeotto": {
@@ -1720,6 +1741,7 @@ var POKEDEX_RBY = {
       "sp": 30,
       "sl": 80
     },
+    "ab":"Oblivious",
     "w": 78.5
   },
   "Slowpoke": {
@@ -1819,6 +1841,7 @@ var POKEDEX_RBY = {
     "ab": "Chlorophyll"
   },
   "Tauros": {
+    "gender": "M",
     "t1": "Normal",
     "bs": {
       "hp": 75,
@@ -2045,6 +2068,7 @@ var POKEDEX_RBY = {
     "w": 12.0
   },
   "Zapdos": {
+    "gender": "",
     "t1": "Electric",
     "t2": "Flying",
     "bs": {
@@ -2099,6 +2123,7 @@ var POKEDEX_GSC = $.extend(true, {}, POKEDEX_RBY, {
       "sd": 90,
       "sp": 55
     },
+    "ab":"static",
     "w": 61.5
   },
   "Ariados": {
@@ -2153,6 +2178,7 @@ var POKEDEX_GSC = $.extend(true, {}, POKEDEX_RBY, {
     "ab": "Chlorophyll"
   },
   "Blissey": {
+    "gender": "F",
     "t1": "Normal",
     "bs": {
       "hp": 255,
@@ -2165,6 +2191,7 @@ var POKEDEX_GSC = $.extend(true, {}, POKEDEX_RBY, {
     "w": 46.8
   },
   "Celebi": {
+    "gender": "",
     "t1": "Psychic",
     "t2": "Grass",
     "bs": {
@@ -2318,6 +2345,7 @@ var POKEDEX_GSC = $.extend(true, {}, POKEDEX_RBY, {
     "w": 23.5
   },
   "Entei": {
+    "gender": "",
     "t1": "Fire",
     "bs": {
       "hp": 115,
@@ -2441,9 +2469,11 @@ var POKEDEX_GSC = $.extend(true, {}, POKEDEX_RBY, {
       "sd": 95,
       "sp": 85
     },
+    "ab":"Swarm",
     "w": 54.0
   },
   "Hitmontop": {
+    "gender": "M",
     "t1": "Fighting",
     "bs": {
       "hp": 50,
@@ -2457,6 +2487,7 @@ var POKEDEX_GSC = $.extend(true, {}, POKEDEX_RBY, {
     "ab": "Intimidate"
   },
   "Ho-Oh": {
+    "gender": "",
     "t1": "Fire",
     "t2": "Flying",
     "bs": {
@@ -2507,6 +2538,7 @@ var POKEDEX_GSC = $.extend(true, {}, POKEDEX_RBY, {
       "sd": 80,
       "sp": 95
     },
+    "ab":"Early Bird",
     "w": 35.0
   },
   "Houndour": {
@@ -2616,6 +2648,7 @@ var POKEDEX_GSC = $.extend(true, {}, POKEDEX_RBY, {
     "w": 10.8
   },
   "Lugia": {
+    "gender": "",
     "t1": "Psychic",
     "t2": "Flying",
     "bs": {
@@ -2704,6 +2737,7 @@ var POKEDEX_GSC = $.extend(true, {}, POKEDEX_RBY, {
     "ab": "Overgrow"
   },
   "Miltank": {
+    "gender": "F",
     "t1": "Normal",
     "bs": {
       "hp": 95,
@@ -2907,6 +2941,7 @@ var POKEDEX_GSC = $.extend(true, {}, POKEDEX_RBY, {
     "w": 3.9
   },
   "Raikou": {
+    "gender": "",
     "t1": "Electric",
     "bs": {
       "hp": 90,
@@ -3034,6 +3069,7 @@ var POKEDEX_GSC = $.extend(true, {}, POKEDEX_RBY, {
     "w": 58.0
   },
   "Smoochum": {
+    "gender": "F",
     "t1": "Ice",
     "t2": "Psychic",
     "bs": {
@@ -3108,6 +3144,7 @@ var POKEDEX_GSC = $.extend(true, {}, POKEDEX_RBY, {
       "sd": 65,
       "sp": 30
     },
+    "ab":"Rock Head",
     "w": 400.0
   },
   "Sudowoodo": {
@@ -3123,6 +3160,7 @@ var POKEDEX_GSC = $.extend(true, {}, POKEDEX_RBY, {
     "w": 38.0
   },
   "Suicune": {
+    "gender": "",
     "t1": "Water",
     "bs": {
       "hp": 100,
@@ -3251,6 +3289,7 @@ var POKEDEX_GSC = $.extend(true, {}, POKEDEX_RBY, {
     "ab": "Sand Stream"
   },
   "Tyrogue": {
+    "gender": "M",
     "t1": "Fighting",
     "bs": {
       "hp": 35,
@@ -3276,6 +3315,7 @@ var POKEDEX_GSC = $.extend(true, {}, POKEDEX_RBY, {
     "w": 27.0
   },
   "Unown": {
+    "gender": "",
     "t1": "Psychic",
     "bs": {
       "hp": 48,
@@ -3365,6 +3405,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
       "sd": 60,
       "sp": 75
     },
+    "ab":"Pressure",
     "w": 47.0
   },
   "Aggron": {
@@ -3378,6 +3419,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
       "sd": 60,
       "sp": 50
     },
+    "ab":"Sturdy",
     "w": 360.0
   },
   "Altaria": {
@@ -3391,6 +3433,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
       "sd": 105,
       "sp": 80
     },
+    "ab":"Natural Cure",
     "w": 20.6
   },
   "Anorith": {
@@ -3482,6 +3525,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
       "sd": 63,
       "sp": 65
     },
+    "ab":"Insomnia",
     "w": 12.5
   },
   "Barboach": {
@@ -3590,6 +3634,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
       "sd": 75,
       "sp": 40
     },
+    "ab":"Magma Armor",
     "w": 220.0
   },
   "Carvanha": {
@@ -3736,6 +3781,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
     "w": 32.6
   },
   "Deoxys": {
+    "gender": "",
     "t1": "Psychic",
     "bs": {
       "hp": 50,
@@ -3887,6 +3933,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
       "sd": 115,
       "sp": 80
     },
+    "ab":"Synchronize",
     "w": 48.4
   },
   "Glalie": {
@@ -3899,6 +3946,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
       "sd": 80,
       "sp": 80
     },
+    "ab": "Inner Focus",
     "w": 256.5
   },
   "Gorebyss": {
@@ -3915,6 +3963,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
     "ab": "Swift Swim"
   },
   "Groudon": {
+    "gender": "",
     "t1": "Ground",
     "bs": {
       "hp": 100,
@@ -3990,6 +4039,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
     "ab": "Swift Swim"
   },
   "Illumise": {
+    "gender": "F",
     "t1": "Bug",
     "bs": {
       "hp": 65,
@@ -4002,6 +4052,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
     "w": 17.7
   },
   "Jirachi": {
+    "gender": "",
     "t1": "Steel",
     "t2": "Psychic",
     "bs": {
@@ -4040,6 +4091,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
     "w": 20.2
   },
   "Kyogre": {
+    "gender": "",
     "t1": "Water",
     "bs": {
       "hp": 100,
@@ -4066,6 +4118,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
     "w": 120.0
   },
   "Latias": {
+    "gender": "F",
     "t1": "Dragon",
     "t2": "Psychic",
     "bs": {
@@ -4080,6 +4133,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
     "ab": "Levitate"
   },
   "Latios": {
+    "gender": "M",
     "t1": "Dragon",
     "t2": "Psychic",
     "bs": {
@@ -4219,6 +4273,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
       "sd": 60,
       "sp": 105
     },
+    "ab":"Static",
     "w": 40.2
   },
   "Marshtomp": {
@@ -4259,6 +4314,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
       "sd": 55,
       "sp": 50
     },
+    "ab":"Hyper Cutter",
     "w": 11.5
   },
   "Medicham": {
@@ -4481,6 +4537,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
     "w": 6.6
   },
   "Rayquaza": {
+    "gender": "",
     "t1": "Dragon",
     "t2": "Flying",
     "bs": {
@@ -4495,6 +4552,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
     "ab": "Air Lock"
   },
   "Regice": {
+    "gender": "",
     "t1": "Ice",
     "bs": {
       "hp": 80,
@@ -4508,6 +4566,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
     "ab": "Clear Body"
   },
   "Regirock": {
+    "gender": "",
     "t1": "Rock",
     "bs": {
       "hp": 80,
@@ -4521,6 +4580,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
     "ab": "Clear Body"
   },
   "Registeel": {
+    "gender": "",
     "t1": "Steel",
     "bs": {
       "hp": 80,
@@ -4570,6 +4630,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
       "sd": 65,
       "sp": 50
     },
+    "ab":"Keen Eye",
     "w": 11.0
   },
   "Salamence": {
@@ -4648,6 +4709,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
       "sd": 40,
       "sp": 95
     },
+    "ab":"Rough Skin",
     "w": 88.8
   },
   "Shedinja": {
@@ -5002,6 +5064,7 @@ var POKEDEX_ADV = $.extend(true, {}, POKEDEX_GSC, {
     "ab": "Vital Spirit"
   },
   "Volbeat": {
+    "gender": "M",
     "t1": "Bug",
     "bs": {
       "hp": 65,
@@ -5389,6 +5452,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     "ab": "Multitype"
   },
   "Azelf": {
+    "gender": "",
     "t1": "Psychic",
     "bs": {
       "hp": 75,
@@ -5631,6 +5695,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     "w": 31.5
   },
   "Cresselia": {
+    "gender": "F",
     "t1": "Psychic",
     "bs": {
       "hp": 120,
@@ -5657,6 +5722,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     "w": 23.0
   },
   "Darkrai": {
+    "gender": "",
     "t1": "Dark",
     "bs": {
       "hp": 70,
@@ -5670,6 +5736,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     "ab": "Bad Dreams"
   },
   "Dialga": {
+    "gender": "",
     "t1": "Steel",
     "t2": "Dragon",
     "bs": {
@@ -5786,6 +5853,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     "ab": "Swift Swim"
   },
   "Froslass": {
+    "gender": "F",
     "t1": "Ice",
     "t2": "Ghost",
     "bs": {
@@ -5824,6 +5892,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
       "sd": 115,
       "sp": 80
     },
+    "ab":"Steadfast",
     "w": 52.0
   },
   "Garchomp": {
@@ -5881,6 +5950,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     "ab": "Sand Veil"
   },
   "Giratina": {
+    "gender": "",
     "t1": "Ghost",
     "t2": "Dragon",
     "bs": {
@@ -5893,7 +5963,8 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     },
     "w": 750.0
   },
-  "Giratina-O": {
+  "Giratina-Origin": {
+    "gender": "",
     "t1": "Ghost",
     "t2": "Dragon",
     "bs": {
@@ -5959,6 +6030,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     "ab": "Overgrow"
   },
   "Happiny": {
+    "gender": "F",
     "t1": "Normal",
     "bs": {
       "hp": 100,
@@ -6096,6 +6168,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
       "sd": 96,
       "sp": 105
     },
+    "ab":"Cute Charm",
     "w": 33.3
   },
   "Lucario": {
@@ -6109,6 +6182,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
       "sd": 70,
       "sp": 90
     },
+    "ab":"Steadfast",
     "w": 54.0
   },
   "Lumineon": {
@@ -6212,6 +6286,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     "w": 65.0
   },
   "Mesprit": {
+    "gender": "",
     "t1": "Psychic",
     "bs": {
       "hp": 80,
@@ -6264,6 +6339,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     "ab": "Blaze"
   },
   "Mothim": {
+    "gender": "M",
     "t1": "Bug",
     "t2": "Flying",
     "bs": {
@@ -6302,6 +6378,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     "w": 3.9
   },
   "Palkia": {
+    "gender": "",
     "t1": "Water",
     "t2": "Dragon",
     "bs": {
@@ -6403,6 +6480,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     "w": 102.5
   },
   "Regigigas": {
+    "gender": "",
     "t1": "Normal",
     "bs": {
       "hp": 110,
@@ -6538,6 +6616,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     "ab": "Levitate"
   },
   "Shaymin": {
+    "gender": "",
     "t1": "Grass",
     "bs": {
       "hp": 100,
@@ -6774,6 +6853,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     "ab": "Overgrow"
   },
   "Uxie": {
+    "gender": "",
     "t1": "Psychic",
     "bs": {
       "hp": 75,
@@ -6787,6 +6867,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     "ab": "Levitate"
   },
   "Vespiquen": {
+    "gender": "F",
     "t1": "Bug",
     "t2": "Flying",
     "bs": {
@@ -6813,6 +6894,7 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     "w": 34.0
   },
   "Wormadam": {
+    "gender": "F",
     "t1": "Bug",
     "t2": "Grass",
     "bs": {
@@ -6825,7 +6907,8 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     },
     "w": 6.5
   },
-  "Wormadam-G": {
+  "Wormadam-Sandy": {
+    "gender": "F",
     "t1": "Bug",
     "t2": "Ground",
     "bs": {
@@ -6838,7 +6921,8 @@ var POKEDEX_DPP = $.extend(true, {}, POKEDEX_ADV, {
     },
     "w": 6.5
   },
-  "Wormadam-S": {
+  "Wormadam-Trash": {
+    "gender": "F",
     "t1": "Bug",
     "t2": "Steel",
     "bs": {
@@ -6979,6 +7063,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
       "sd": 86,
       "sp": 50
     },
+    "ab": "Healer",
     "w": 31.0
   },
   "Axew": {
@@ -7079,6 +7164,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 94.6
   },
   "Braviary": {
+    "gender": "M",
     "t1": "Normal",
     "t2": "Flying",
     "bs": {
@@ -7130,6 +7216,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 7.5
   },
   "Cobalion": {
+    "gender": "",
     "t1": "Steel",
     "t2": "Fighting",
     "bs": {
@@ -7557,6 +7644,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 107.3
   },
   "Genesect": {
+    "gender": "",
     "t1": "Bug",
     "t2": "Steel",
     "bs": {
@@ -7745,6 +7833,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 5.9
   },
   "Keldeo": {
+    "gender": "",
     "t1": "Water",
     "t2": "Fighting",
     "bs": {
@@ -7821,6 +7910,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 96.3
   },
   "Kyurem": {
+    "gender": "",
     "t1": "Dragon",
     "t2": "Ice",
     "bs": {
@@ -7834,7 +7924,8 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 325.0,
     "ab": "Pressure"
   },
-  "Kyurem-B": {
+  "Kyurem-Black": {
+    "gender": "",
     "t1": "Dragon",
     "t2": "Ice",
     "bs": {
@@ -7848,7 +7939,8 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 325.0,
     "ab": "Teravolt"
   },
-  "Kyurem-W": {
+  "Kyurem-White": {
+    "gender": "",
     "t1": "Dragon",
     "t2": "Ice",
     "bs": {
@@ -7876,6 +7968,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 13.0
   },
   "Landorus": {
+    "gender": "M",
     "t1": "Ground",
     "t2": "Flying",
     "bs": {
@@ -7889,6 +7982,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 68.0
   },
   "Landorus-Therian": {
+    "gender": "M",
     "t1": "Ground",
     "t2": "Flying",
     "bs": {
@@ -7941,6 +8035,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 37.5
   },
   "Lilligant": {
+    "gender": "F",
     "t1": "Grass",
     "bs": {
       "hp": 70,
@@ -7978,6 +8073,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 3.1
   },
   "Mandibuzz": {
+    "gender": "F",
     "t1": "Dark",
     "t2": "Flying",
     "bs": {
@@ -8003,6 +8099,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 28.0
   },
   "Meloetta": {
+    "gender": "",
     "t1": "Normal",
     "t2": "Psychic",
     "bs": {
@@ -8183,6 +8280,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 10.2
   },
   "Petilil": {
+    "gender": "F",
     "t1": "Grass",
     "bs": {
       "hp": 45,
@@ -8234,6 +8332,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 10.1
   },
   "Reshiram": {
+    "gender": "",
     "t1": "Dragon",
     "t2": "Fire",
     "bs": {
@@ -8272,6 +8371,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 18.0
   },
   "Rufflet": {
+    "gender": "M",
     "t1": "Normal",
     "t2": "Flying",
     "bs": {
@@ -8311,6 +8411,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 15.2
   },
   "Sawk": {
+    "gender": "M",
     "t1": "Fighting",
     "bs": {
       "hp": 75,
@@ -8629,6 +8730,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "ab": "Blaze"
   },
   "Terrakion": {
+    "gender": "",
     "t1": "Rock",
     "t2": "Fighting",
     "bs": {
@@ -8643,6 +8745,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "ab": "Justified"
   },
   "Throh": {
+    "gender": "M",
     "t1": "Fighting",
     "bs": {
       "hp": 120,
@@ -8655,6 +8758,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 55.5
   },
   "Thundurus": {
+    "gender": "M",
     "t1": "Electric",
     "t2": "Flying",
     "bs": {
@@ -8668,6 +8772,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 61.0
   },
   "Thundurus-Therian": {
+    "gender": "M",
     "t1": "Electric",
     "t2": "Flying",
     "bs": {
@@ -8707,6 +8812,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 16.5
   },
   "Tornadus": {
+    "gender": "M",
     "t1": "Flying",
     "bs": {
       "hp": 79,
@@ -8719,6 +8825,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 63.0
   },
   "Tornadus-Therian": {
+    "gender": "M",
     "t1": "Flying",
     "bs": {
       "hp": 79,
@@ -8844,6 +8951,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 5.3
   },
   "Victini": {
+    "gender": "",
     "t1": "Psychic",
     "t2": "Fire",
     "bs": {
@@ -8858,6 +8966,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "ab": "Victory Star"
   },
   "Virizion": {
+    "gender": "",
     "t1": "Grass",
     "t2": "Fighting",
     "bs": {
@@ -8885,6 +8994,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 46.0
   },
   "Vullaby": {
+    "gender": "F",
     "t1": "Dark",
     "t2": "Flying",
     "bs": {
@@ -8973,6 +9083,7 @@ var POKEDEX_BW = $.extend(true, {}, POKEDEX_DPP, {
     "w": 79.5
   },
   "Zekrom": {
+    "gender": "",
     "t1": "Dragon",
     "t2": "Electric",
     "bs": {
@@ -9355,6 +9466,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Mega Launcher"
   },
   "Diancie": {
+    "gender": "",
     "t1": "Rock",
     "t2": "Fairy",
     "bs": {
@@ -9462,7 +9574,8 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     },
     "w": 9.4
   },
-  "Flabebe": {
+  "Flabébé": {
+    "gender": "F",
     "t1": "Fairy",
     "bs": {
       "hp": 44,
@@ -9501,6 +9614,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "w": 1.7
   },
   "Floette": {
+    "gender": "F",
     "t1": "Fairy",
     "bs": {
       "hp": 54,
@@ -9526,6 +9640,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Flower Veil"
   },
   "Florges": {
+    "gender": "F",
     "t1": "Fairy",
     "bs": {
       "hp": 78,
@@ -9730,6 +9845,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "No Guard"
   },
   "Hoopa": {
+    "gender": "",
     "t1": "Psychic",
     "t2": "Ghost",
     "bs": {
@@ -9744,6 +9860,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Magician"
   },
   "Hoopa-Unbound": {
+    "gender": "",
     "t1": "Psychic",
     "t2": "Dark",
     "bs": {
@@ -9809,7 +9926,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     },
     "w": 47.0
   },
-  "Mega Abomasnow": {
+  "Abomasnow-Mega": {
     "t1": "Grass",
     "t2": "Ice",
     "bs": {
@@ -9824,7 +9941,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Snow Warning",
     "isAlternateForme": true
   },
-  "Mega Absol": {
+  "Absol-Mega": {
     "t1": "Dark",
     "bs": {
       "hp": 65,
@@ -9838,7 +9955,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Magic Bounce",
     "isAlternateForme": true
   },
-  "Mega Aerodactyl": {
+  "Aerodactyl-Mega": {
     "t1": "Rock",
     "t2": "Flying",
     "bs": {
@@ -9853,7 +9970,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Tough Claws",
     "isAlternateForme": true
   },
-  "Mega Aggron": {
+  "Aggron-Mega": {
     "t1": "Steel",
     "bs": {
       "hp": 70,
@@ -9867,7 +9984,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Filter",
     "isAlternateForme": true
   },
-  "Mega Alakazam": {
+  "Alakazam-Mega": {
     "t1": "Psychic",
     "bs": {
       "hp": 55,
@@ -9881,7 +9998,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Trace",
     "isAlternateForme": true
   },
-  "Mega Altaria": {
+  "Altaria-Mega": {
     "t1": "Dragon",
     "t2": "Fairy",
     "bs": {
@@ -9896,7 +10013,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Pixilate",
     "isAlternateForme": true
   },
-  "Mega Ampharos": {
+  "Ampharos-Mega": {
     "t1": "Electric",
     "t2": "Dragon",
     "bs": {
@@ -9911,7 +10028,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Mold Breaker",
     "isAlternateForme": true
   },
-  "Mega Audino": {
+  "Audino-Mega": {
     "t1": "Normal",
     "t2": "Fairy",
     "bs": {
@@ -9926,7 +10043,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Healer",
     "isAlternateForme": true
   },
-  "Mega Banette": {
+  "Banette-Mega": {
     "t1": "Ghost",
     "bs": {
       "hp": 64,
@@ -9940,7 +10057,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Prankster",
     "isAlternateForme": true
   },
-  "Mega Beedrill": {
+  "Beedrill-Mega": {
     "t1": "Bug",
     "t2": "Poison",
     "bs": {
@@ -9955,7 +10072,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Adaptability",
     "isAlternateForme": true
   },
-  "Mega Blastoise": {
+  "Blastoise-Mega": {
     "t1": "Water",
     "bs": {
       "hp": 79,
@@ -9969,7 +10086,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Mega Launcher",
     "isAlternateForme": true
   },
-  "Mega Blaziken": {
+  "Blaziken-Mega": {
     "t1": "Fire",
     "t2": "Fighting",
     "bs": {
@@ -9984,7 +10101,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Speed Boost",
     "isAlternateForme": true
   },
-  "Mega Camerupt": {
+  "Camerupt-Mega": {
     "t1": "Fire",
     "t2": "Ground",
     "bs": {
@@ -9999,7 +10116,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Sheer Force",
     "isAlternateForme": true
   },
-  "Mega Charizard X": {
+  "Charizard-Mega-X": {
     "t1": "Fire",
     "t2": "Dragon",
     "bs": {
@@ -10014,7 +10131,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Tough Claws",
     "isAlternateForme": true
   },
-  "Mega Charizard Y": {
+  "Charizard-Mega-Y": {
     "t1": "Fire",
     "t2": "Flying",
     "bs": {
@@ -10029,7 +10146,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Drought",
     "isAlternateForme": true
   },
-  "Mega Diancie": {
+  "Diancie-Mega": {
     "t1": "Rock",
     "t2": "Fairy",
     "bs": {
@@ -10044,7 +10161,8 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Magic Bounce",
     "isAlternateForme": true
   },
-  "Mega Gallade": {
+  "Gallade-M": {
+    "gender": "M",
     "t1": "Psychic",
     "t2": "Fighting",
     "bs": {
@@ -10059,7 +10177,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Inner Focus",
     "isAlternateForme": true
   },
-  "Mega Garchomp": {
+  "Garchomp-Mega": {
     "t1": "Dragon",
     "t2": "Ground",
     "bs": {
@@ -10074,7 +10192,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Sand Force",
     "isAlternateForme": true
   },
-  "Mega Gardevoir": {
+  "Gardevoir-Mega": {
     "t1": "Psychic",
     "t2": "Fairy",
     "bs": {
@@ -10089,7 +10207,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Pixilate",
     "isAlternateForme": true
   },
-  "Mega Gengar": {
+  "Gengar-Mega": {
     "t1": "Ghost",
     "t2": "Poison",
     "bs": {
@@ -10104,7 +10222,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Shadow Tag",
     "isAlternateForme": true
   },
-  "Mega Glalie": {
+  "Glalie-Mega": {
     "t1": "Ice",
     "bs": {
       "hp": 80,
@@ -10118,7 +10236,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Refrigerate",
     "isAlternateForme": true
   },
-  "Mega Gyarados": {
+  "Gyarados-Mega": {
     "t1": "Water",
     "t2": "Dark",
     "bs": {
@@ -10133,7 +10251,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Mold Breaker",
     "isAlternateForme": true
   },
-  "Mega Heracross": {
+  "Heracross-Mega": {
     "t1": "Bug",
     "t2": "Fighting",
     "bs": {
@@ -10148,7 +10266,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Skill Link",
     "isAlternateForme": true
   },
-  "Mega Houndoom": {
+  "Houndoom-Mega": {
     "t1": "Dark",
     "t2": "Fire",
     "bs": {
@@ -10163,7 +10281,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Solar Power",
     "isAlternateForme": true
   },
-  "Mega Kangaskhan": {
+  "Kangaskhan-Mega": {
     "t1": "Normal",
     "bs": {
       "hp": 105,
@@ -10177,7 +10295,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Parental Bond",
     "isAlternateForme": true
   },
-  "Mega Latias": {
+  "Latias-Mega": {
     "t1": "Dragon",
     "t2": "Psychic",
     "bs": {
@@ -10192,7 +10310,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Levitate",
     "isAlternateForme": true
   },
-  "Mega Latios": {
+  "Latios-Mega": {
     "t1": "Dragon",
     "t2": "Psychic",
     "bs": {
@@ -10207,7 +10325,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Levitate",
     "isAlternateForme": true
   },
-  "Mega Lopunny": {
+  "Lopunny-Mega": {
     "t1": "Normal",
     "t2": "Fighting",
     "bs": {
@@ -10222,7 +10340,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Scrappy",
     "isAlternateForme": true
   },
-  "Mega Lucario": {
+  "Lucario-Mega": {
     "t1": "Fighting",
     "t2": "Steel",
     "bs": {
@@ -10237,7 +10355,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Adaptability",
     "isAlternateForme": true
   },
-  "Mega Manectric": {
+  "Manectric-Mega": {
     "t1": "Electric",
     "bs": {
       "hp": 70,
@@ -10251,7 +10369,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Intimidate",
     "isAlternateForme": true
   },
-  "Mega Mawile": {
+  "Mawile-Mega": {
     "t1": "Steel",
     "t2": "Fairy",
     "bs": {
@@ -10266,7 +10384,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Huge Power",
     "isAlternateForme": true
   },
-  "Mega Medicham": {
+  "Medicham-Mega": {
     "t1": "Fighting",
     "t2": "Psychic",
     "bs": {
@@ -10281,7 +10399,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Pure Power",
     "isAlternateForme": true
   },
-  "Mega Metagross": {
+  "Metagross-Mega": {
     "t1": "Steel",
     "t2": "Psychic",
     "bs": {
@@ -10296,7 +10414,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Tough Claws",
     "isAlternateForme": true
   },
-  "Mega Mewtwo X": {
+  "Mewtwo-Mega-X": {
     "t1": "Psychic",
     "t2": "Fighting",
     "bs": {
@@ -10311,7 +10429,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Steadfast",
     "isAlternateForme": true
   },
-  "Mega Mewtwo Y": {
+  "Mewtwo-Mega-Y": {
     "t1": "Psychic",
     "bs": {
       "hp": 106,
@@ -10325,7 +10443,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Insomnia",
     "isAlternateForme": true
   },
-  "Mega Pidgeot": {
+  "Pidgeot-Mega": {
     "t1": "Normal",
     "t2": "Flying",
     "bs": {
@@ -10340,7 +10458,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "No Guard",
     "isAlternateForme": true
   },
-  "Mega Pinsir": {
+  "Pinsir-Mega": {
     "t1": "Bug",
     "t2": "Flying",
     "bs": {
@@ -10355,7 +10473,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Aerilate",
     "isAlternateForme": true
   },
-  "Mega Rayquaza": {
+  "Rayquaza-Mega": {
     "t1": "Dragon",
     "t2": "Flying",
     "bs": {
@@ -10370,7 +10488,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Delta Stream",
     "isAlternateForme": true
   },
-  "Mega Sableye": {
+  "Sableye-Mega": {
     "t1": "Dark",
     "t2": "Ghost",
     "bs": {
@@ -10385,7 +10503,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Magic Bounce",
     "isAlternateForme": true
   },
-  "Mega Salamence": {
+  "Salamence-Mega": {
     "t1": "Dragon",
     "t2": "Flying",
     "bs": {
@@ -10400,7 +10518,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Aerilate",
     "isAlternateForme": true
   },
-  "Mega Sceptile": {
+  "Sceptile-Mega": {
     "t1": "Grass",
     "t2": "Dragon",
     "bs": {
@@ -10415,7 +10533,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Lightningrod",
     "isAlternateForme": true
   },
-  "Mega Scizor": {
+  "Scizor-Mega": {
     "t1": "Bug",
     "t2": "Steel",
     "bs": {
@@ -10430,7 +10548,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Technician",
     "isAlternateForme": true
   },
-  "Mega Sharpedo": {
+  "Sharpedo-Mega": {
     "t1": "Water",
     "t2": "Dark",
     "bs": {
@@ -10445,7 +10563,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Strong Jaw",
     "isAlternateForme": true
   },
-  "Mega Slowbro": {
+  "Slowbro-Mega": {
     "t1": "Water",
     "t2": "Psychic",
     "bs": {
@@ -10460,7 +10578,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Shell Armor",
     "isAlternateForme": true
   },
-  "Mega Steelix": {
+  "Steelix-Mega": {
     "t1": "Steel",
     "t2": "Ground",
     "bs": {
@@ -10475,7 +10593,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Sand Force",
     "isAlternateForme": true
   },
-  "Mega Swampert": {
+  "Swampert-Mega": {
     "t1": "Water",
     "t2": "Ground",
     "bs": {
@@ -10490,7 +10608,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Swift Swim",
     "isAlternateForme": true
   },
-  "Mega Tyranitar": {
+  "Tyranitar-Mega": {
     "t1": "Rock",
     "t2": "Dark",
     "bs": {
@@ -10505,7 +10623,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Sand Stream",
     "isAlternateForme": true
   },
-  "Mega Venusaur": {
+  "Venusaur-Mega": {
     "t1": "Grass",
     "t2": "Poison",
     "bs": {
@@ -10596,7 +10714,8 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     },
     "w": 7.0
   },
-  "Primal Groudon": {
+  "Groudon-Primal": {
+    "gender": "",
     "t1": "Ground",
     "t2": "Fire",
     "bs": {
@@ -10610,7 +10729,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "w": 999.7,
     "ab": "Desolate Land"
   },
-  "Primal Kyogre": {
+  "Kyogre-Primal": {
     "t1": "Water",
     "bs": {
       "hp": 100,
@@ -10877,6 +10996,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "w": 17.0
   },
   "Volcanion": {
+    "gender": "",
     "t1": "Fire",
     "t2": "Water",
     "bs": {
@@ -10891,6 +11011,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Water Absorb"
   },
   "Xerneas": {
+    "gender": "",
     "t1": "Fairy",
     "bs": {
       "hp": 126,
@@ -10904,6 +11025,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Fairy Aura"
   },
   "Yveltal": {
+    "gender": "",
     "t1": "Dark",
     "t2": "Flying",
     "bs": {
@@ -10918,6 +11040,7 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
     "ab": "Dark Aura"
   },
   "Zygarde": {
+    "gender": "",
     "t1": "Dragon",
     "t2": "Ground",
     "bs": {
@@ -10927,6 +11050,21 @@ var POKEDEX_XY = $.extend(true, {}, POKEDEX_BW, {
       "sa": 81,
       "sd": 95,
       "sp": 95
+    },
+    "w": 305.0,
+    "ab": "Aura Break"
+  },
+  "Zygarde-10%": {
+    "gender": "",
+    "t1": "Dragon",
+    "t2": "Ground",
+    "bs": {
+      "hp": 54,
+      "at": 100,
+      "df": 71,
+      "sa": 61,
+      "sd": 85,
+      "sp": 115
     },
     "w": 305.0,
     "ab": "Aura Break"
@@ -11788,6 +11926,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 4.8,
   },
   "Salazzle": {
+    "gender": "F",
     "t1": "Poison",
     "t2": "Fire",
     "bs": {
@@ -11829,6 +11968,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 135.0,
   },
   "Bounsweet": {
+    "gender": "F",
     "t1": "Grass",
     "bs": {
       "hp": 42,
@@ -11841,6 +11981,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 3.2,
   },
   "Steenee": {
+    "gender": "F",
     "t1": "Grass",
     "bs": {
       "hp": 52,
@@ -11853,6 +11994,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 8.2,
   },
   "Tsareena": {
+    "gender": "F",
     "t1": "Grass",
     "bs": {
       "hp": 72,
@@ -11966,6 +12108,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 1.2,
   },
   "Type: Null": {
+    "gender": "",
     "t1": "Normal",
     "bs": {
       "hp": 95,
@@ -11978,6 +12121,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 120.5,
   },
   "Silvally": {
+    "gender": "",
     "t1": "Normal",
     "bs": {
       "hp": 95,
@@ -12173,6 +12317,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 78.2,
   },
   "Tapu Koko": {
+    "gender": "",
     "t1": "Electric",
     "t2": "Fairy",
     "bs": {
@@ -12187,6 +12332,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 20.5,
   },
   "Tapu Lele": {
+    "gender": "",
     "t1": "Psychic",
     "t2": "Fairy",
     "bs": {
@@ -12201,6 +12347,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 18.6,
   },
   "Tapu Bulu": {
+    "gender": "",
     "t1": "Grass",
     "t2": "Fairy",
     "bs": {
@@ -12215,6 +12362,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 45.5,
   },
   "Tapu Fini": {
+    "gender": "",
     "t1": "Water",
     "t2": "Fairy",
     "bs": {
@@ -12229,6 +12377,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 21.2,
   },
   "Cosmog": {
+    "gender": "",
     "t1": "Psychic",
     "bs": {
       "hp": 43,
@@ -12241,6 +12390,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 0.1,
   },
   "Cosmoem": {
+    "gender": "",
     "t1": "Psychic",
     "bs": {
       "hp": 43,
@@ -12253,6 +12403,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 999.9,
   },
   "Solgaleo": {
+    "gender": "",
     "t1": "Psychic",
     "t2": "Steel",
     "bs": {
@@ -12267,6 +12418,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 230.0,
   },
   "Lunala": {
+    "gender": "",
     "t1": "Psychic",
     "t2": "Ghost",
     "bs": {
@@ -12281,6 +12433,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 120.0,
   },
   "Nihilego": {
+    "gender": "",
     "t1": "Rock",
     "t2": "Poison",
     "bs": {
@@ -12294,6 +12447,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 55.5,
   },
   "Buzzwole": {
+    "gender": "",
     "t1": "Bug",
     "t2": "Fighting",
     "bs": {
@@ -12307,6 +12461,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 333.6,
   },
   "Pheromosa": {
+    "gender": "",
     "t1": "Bug",
     "t2": "Fighting",
     "bs": {
@@ -12320,6 +12475,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 25.0,
   },
   "Xurkitree": {
+    "gender": "",
     "t1": "Electric",
     "bs": {
       "hp": 83,
@@ -12332,6 +12488,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 100.0,
   },
   "Celesteela": {
+    "gender": "",
     "t1": "Steel",
     "t2": "Flying",
     "bs": {
@@ -12345,6 +12502,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 999.9,
   },
   "Kartana": {
+    "gender": "",
     "t1": "Grass",
     "t2": "Steel",
     "bs": {
@@ -12358,6 +12516,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 0.1,
   },
   "Guzzlord": {
+    "gender": "",
     "t1": "Dark",
     "t2": "Dragon",
     "bs": {
@@ -12371,6 +12530,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 888.0,
   },
   "Necrozma": {
+    "gender": "",
     "t1": "Psychic",
     "bs": {
       "hp": 97,
@@ -12379,6 +12539,32 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
       "sa": 127,
       "sd": 89,
       "sp": 79
+    },
+    "w": 230.0,
+  },
+  "Necrozma-Dusk-Mane": {
+    "gender": "",
+    "t1": "Psychic",
+    "bs": {
+      "hp": 97,
+      "at": 157,
+      "df": 127,
+      "sa": 113,
+      "sd": 109,
+      "sp": 77
+    },
+    "w": 230.0,
+  },
+  "Necrozma-Dawn-Wings": {
+    "gender": "",
+    "t1": "Psychic",
+    "bs": {
+      "hp": 97,
+      "at": 113,
+      "df": 109,
+      "sa": 157,
+      "sd": 127,
+      "sp": 77
     },
     "w": 230.0,
   },
@@ -12396,6 +12582,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 80.5,
   },
   "Marshadow": {
+    "gender": "",
     "t1": "Fighting",
     "t2": "Ghost",
     "bs": {
@@ -12409,6 +12596,7 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 22.2,
   },
   "Poipole": {
+    "gender": "",
     "t1": "Poison",
     "bs": {
       "hp": 67,
@@ -12421,8 +12609,9 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 4.0,
   },
   "Naganadel": {
+    "gender": "",
     "t1": "Poison",
-	"t2": "Dragon",
+	  "t2": "Dragon",
     "bs": {
       "hp": 73,
       "at": 73,
@@ -12434,8 +12623,9 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 150.0,
   },
   "Stakataka": {
+    "gender": "",
     "t1": "Rock",
-	"t2": "Steel",
+	  "t2": "Steel",
     "bs": {
       "hp": 61,
       "at": 131,
@@ -12447,8 +12637,9 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
     "w": 820.0,
   },
   "Blacephalon": {
+    "gender": "",
     "t1": "Fire",
-	"t2": "Ghost",
+	  "t2": "Ghost",
     "bs": {
       "hp": 53,
       "at": 127,
@@ -12461,7 +12652,6 @@ var POKEDEX_SM = $.extend(true, {}, POKEDEX_XY, {
   }
 });
 
-delete POKEDEX_SM['Gengar'].ab;
 delete POKEDEX_SM['Raikou'].ab;
 delete POKEDEX_SM['Entei'].ab;
 delete POKEDEX_SM['Suicune'].ab;

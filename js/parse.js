@@ -44,9 +44,13 @@ var generate = function(){
 				monList[monList.length-1].species = species_line[2].slice(1,species_line[2].length-1);
 				monList[monList.length-1].item = species_line[3].trim();
 			}
+			if(POKEDEX_SM[monList[monList.length-1].species]["gender"]!=undefined){
+				monList[monList.length-1].gender=POKEDEX_SM[monList[monList.length-1].species]["gender"];
+			}
 		}
-		else if(abilityLinePat.test(lines[i])){
+		else if(abilityLinePat.test(lines[i])&&monList[monList.length-1].ability===""){
 			monList[monList.length-1].ability = abilityLinePat.exec(lines[i])[1];
+			monList[monList.length-1]=SPECIAL_FORME_FILTERING(monList[monList.length-1]);
 		}
 		else if(natureLinePat.test(lines[i])){
 			monList[monList.length-1].nature = natureLinePat.exec(lines[i])[1];
@@ -89,7 +93,9 @@ var generate = function(){
 	console.log(monList);
 
 	for(var i = 0; i < monList.length; ++i){
+		console.log(monList[i].species)
 		monList[i].calcStats();
+		monList[i].species=addText(monList[i].species);
 	}
 
 	for(pokemon in monList){
@@ -122,9 +128,18 @@ var generate = function(){
 	}
 };
 
+function calcStats(){
+	this.hp = CALC_HP_ADV(this.species, this.hpev, this.hpiv, this.level);
+	this.atk = CALC_STAT_ADV(this.species, this.atkev, this.atkiv, this.nature, this.level, "at");
+	this.def = CALC_STAT_ADV(this.species, this.defev, this.defiv, this.nature, this.level, "df");
+	this.spatk = CALC_STAT_ADV(this.species, this.spatkev, this.spatkiv, this.nature, this.level, "sa");
+	this.spdef = CALC_STAT_ADV(this.species, this.spdefev, this.spdefiv, this.nature, this.level, "sd");
+	this.spe = CALC_STAT_ADV(this.species, this.speev, this.speiv, this.nature, this.level, "sp");
+}
+
 function mon() {
     this.species = "";
-    this.nature = "";
+    this.nature = "Serious";
     this.ability = "";
     this.item = "";
     this.move1 = "";
@@ -154,13 +169,14 @@ function mon() {
     this.calcStats = calcStats;
 }
 
-function calcStats(){
-	this.hp = CALC_HP_ADV(this.species, this.hpev, this.hpiv, this.level);
-	this.atk = CALC_STAT_ADV(this.species, this.atkev, this.atkiv, this.nature, this.level, "at");
-	this.def = CALC_STAT_ADV(this.species, this.defev, this.defiv, this.nature, this.level, "df");
-	this.spatk = CALC_STAT_ADV(this.species, this.spatkev, this.spatkiv, this.nature, this.level, "sa");
-	this.spdef = CALC_STAT_ADV(this.species, this.spdefev, this.spdefiv, this.nature, this.level, "sd");
-	this.spe = CALC_STAT_ADV(this.species, this.speev, this.speiv, this.nature, this.level, "sp");
+function addText(species){
+	if(species==="Thundurus"||species==="Tornadus"||species==="Landorus"){
+		return species+"-Incarnate";
+	}
+	else if(species==="Zygarde"){
+		return species+"-50%";
+	}
+	return species;
 }
 
 var NATURES = {
@@ -201,6 +217,31 @@ function CALC_HP_ADV(species, evs, ivs, level) {
         total = Math.floor((base * 2 + ivs + Math.floor(evs / 4)) * level / 100) + level + 10;
     }
     return total;
+}
+
+function SPECIAL_FORME_FILTERING(mon){
+	if(mon.species.includes("Pikachu")&&species_line[1].trim()!=="Pikachu")
+	{
+		mon.species="Pikachu";
+		mon.gender="M";
+		mon.ability="Static";
+	}
+	else if(mon.species.includes("Kyurem")||mon.species.includes("Giratina")||mon.species.includes("Necrozma")||mon.species.includes("Wormadam")||mon.species.includes("Rotom")||mon.species.includes("Gourgeist")||mon.species.includes("Lycanroc")||mon.species.includes("Oricorio")||mon.species.includes("Zygarde")){
+		return mon;
+	}
+	else if(mon.species==="Scizor-Mega"||mon.species==="Blaziken-Mega"){
+		mon.species=mon.species.replace("-Mega","");
+	}
+	else if(mon.species.includes("-")&&mon.species!=="Porygon-Z"&&mon.species!=="Kommo-o"){
+		if(POKEDEX_SM[mon.species]["ab"]===mon.ability){
+			mon.ability=POKEDEX_SM[mon.species.split("-")[0]]["ab"];
+		}
+		mon.species=mon.species.split("-")[0];
+	}
+	if(POKEDEX_SM[mon.species]["gender"]!=undefined){
+		mon.gender=POKEDEX_SM[mon.species]["gender"];
+	}
+	return mon;
 }
 
 function CALC_STAT_ADV(species, evs, ivs, nature, level, statName) {    
