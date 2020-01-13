@@ -44,8 +44,9 @@ var generate = function(){
 				monList[monList.length-1].species = species_line[2].slice(1,species_line[2].length-1);
 				monList[monList.length-1].item = species_line[3].trim();
 			}
-			if(POKEDEX_SM[monList[monList.length-1].species]["gender"]!=undefined){
-				monList[monList.length-1].gender=POKEDEX_SM[monList[monList.length-1].species]["gender"];
+			monList[monList.length-1]=SPECIAL_FORME_FILTERING(monList[monList.length-1]);
+			if(POKEDEX_SS[monList[monList.length-1].species]["gender"]!=undefined){
+				monList[monList.length-1].gender=POKEDEX_SS[monList[monList.length-1].species]["gender"];
 			}
 		}
 		else if(abilityLinePat.test(lines[i])&&monList[monList.length-1].ability===""){
@@ -101,7 +102,7 @@ var generate = function(){
 	for(pokemon in monList){
 		$('.ptable').show();
 		$('.ptable').eq(pokemon).find("#pokemon").text(monList[pokemon].species);
-		$('.ptable').eq(pokemon).find("#nature").text(monList[pokemon].nature);
+		$('.ptable').eq(pokemon).find("#gigantamaxCheckbox").prop("checked", monList[pokemon].gigantamax);
 		$('.ptable').eq(pokemon).find("#ability").text(monList[pokemon].ability);
 		$('.ptable').eq(pokemon).find("#heldItem").text(monList[pokemon].item);
 		$('.ptable').eq(pokemon).find("#move1").text(monList[pokemon].move1);
@@ -139,7 +140,8 @@ function calcStats(){
 
 function mon() {
     this.species = "";
-    this.nature = "Serious";
+	this.nature = "Serious";
+	this.gigantamax=false;
     this.ability = "";
     this.item = "";
     this.move1 = "";
@@ -210,7 +212,7 @@ var NATURES = {
 
 
 function CALC_HP_ADV(species, evs, ivs, level) {
-	base = POKEDEX_SM[species]["bs"]["hp"];
+	base = POKEDEX_SS[species]["bs"]["hp"];
     if (base === 1) {
         total = 1;
     } else {
@@ -220,11 +222,18 @@ function CALC_HP_ADV(species, evs, ivs, level) {
 }
 
 function SPECIAL_FORME_FILTERING(mon){
-	if(mon.species.includes("Pikachu")&&species_line[1].trim()!=="Pikachu")
+	if(mon.species.includes("-Gmax")){
+		mon.species=mon.species.replace("-Gmax", "");
+		mon.gigantamax=true;
+	}
+	else if(mon.species.includes("Pikachu")&&mon.species=="Pikachu")
 	{
 		mon.species="Pikachu";
 		mon.gender="M";
 		mon.ability="Static";
+	}
+	else if(mon.species==="Indeedee"){
+		mon.species="Indeedee-M";
 	}
 	else if(mon.species.includes("Kyurem")||mon.species.includes("Giratina")||mon.species.includes("Necrozma")||mon.species.includes("Wormadam")||mon.species.includes("Rotom")||mon.species.includes("Gourgeist")||mon.species.includes("Lycanroc")||mon.species.includes("Oricorio")||mon.species.includes("Zygarde")){
 		return mon;
@@ -232,20 +241,17 @@ function SPECIAL_FORME_FILTERING(mon){
 	else if(mon.species==="Scizor-Mega"||mon.species==="Blaziken-Mega"){
 		mon.species=mon.species.replace("-Mega","");
 	}
-	else if(mon.species.includes("-")&&mon.species!=="Porygon-Z"&&mon.species!=="Kommo-o"){
-		if(POKEDEX_SM[mon.species]["ab"]===mon.ability){
-			mon.ability=POKEDEX_SM[mon.species.split("-")[0]]["ab"];
+	else if(mon.species.includes("-")&&mon.species!=="Porygon-Z"&&mon.species!=="Kommo-o"&&!mon.species.includes("Indeedee")){
+		if(POKEDEX_SS[mon.species]["ab"]===mon.ability){
+			mon.ability=POKEDEX_SS[mon.species.split("-")[0]]["ab"];
 		}
 		mon.species=mon.species.split("-")[0];
-	}
-	if(POKEDEX_SM[mon.species]["gender"]!=undefined){
-		mon.gender=POKEDEX_SM[mon.species]["gender"];
 	}
 	return mon;
 }
 
 function CALC_STAT_ADV(species, evs, ivs, nature, level, statName) {    
-	base = POKEDEX_SM[species]["bs"][statName];
+	base = POKEDEX_SS[species]["bs"][statName];
     var natureMods = NATURES[nature];
     var nature = natureMods[0] === statName ? 1.1 : natureMods[1] === statName ? 0.9 : 1;
     var total = Math.floor((Math.floor((base * 2 + ivs + Math.floor(evs / 4)) * level / 100) + 5) * nature);
