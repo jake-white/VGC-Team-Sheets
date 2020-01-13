@@ -79,92 +79,83 @@
 		<div class="printHead">
 	        <div id="printTitle">Pokémon Video Game Team List</div>
 	        <div class="container">
-	            <div id="primary">
+					<div id="primary">
 		      		
-					<style type="text/css"> 
-					  .namecol { width:920px; }
-					  .field { width:400px; display:table; float:left; }
-					  .label { white-space:nowrap; display:table-cell; width:1px; } 
-                      .cartlabel { white-space:nowrap; display:table-cell; width:1px; float:left;} 
-					  .data { border-bottom: solid 1px black; width="100%";text-align:center; margin-left:10px; white-space:nowrap; display:table-cell; } 
-					  .row { display:table-row; }
-					</style> 
-
-					<div class="namecol"> 
-					  <div class="field"> 
-					    <div class="row"> 
-					      <div class="label">First Name:</div> 
-					      <div class="data"></div> 
-					    </div>
-					  </div>
-					  <br>
-					  <div class="field"> 
-					    <div class="row"> 
-					      <div class="label">Surname:</div> 
-					      <div class="data"></div> 
-					    </div>
-					  </div>
-					  <br>
-					  <div class="field"> 
-					    <div class="row"> 
-					      <div class="label">Player ID:</div> 
-					      <div class="data"></div> 
-					    </div>
-					  </div>
-					  <br>
-					  <div class="field"> 
-					    <div class="row"> 
-					      <div class="label">Date of Birth:</div> 
-					      <div class="data"></div> 
-					    </div>
-					  </div>
-					  <br>
-					  <div class="field"> 
-					    <div class="row"> 
-					      <div class="label">Age Division:	Juniors <input type="checkbox"> Seniors <input type="checkbox"> Masters <input type="checkbox"></input></div>
-					    </div>
-					  </div>
-                      <br>
-					</div>
-					<br>
-		        </div>
-	           	<div id="secondary">
-					<div class="namecol"> 
-					  <div class="field"> 
-					    <div class="row"> 
-					      <div class="label">Event Dates</div> 
-					      <div class="data"></div> 
-					    </div>
-					  </div>
-					  <br>
-					  <div class="field"> 
-					    <div class="row"> 
-					      <div class="label">Event Name:</div> 
-					      <div class="data"></div> 
-					    </div>
-					  </div>
-					  <br>
-					  <div class="field"> 
-					    <div class="row"> 
-					      <div class="label"></div> 
-					    </div>
-					  </div>
-					  <br>
-					  <div class="field"> 
-                        <div class="row"> 
-                          <div class="label">Team Number/Name:</div> 
-                          <div class="data"></div> 
-                        </div>
-                      </div>
-					  <br>
-                      <div class="field"> 
-                        <div class="row"> 
-                          <div class="cartlabel">Game:  Cartridge <input type="checkbox"> Digital <input type="checkbox"></div> 
-                        </div>
-                      </div>
-					  <br>
-					</div>
-	           	</div>
+							<style type="text/css"> 
+							  .namecol { width:920px; }
+							  .field { width:400px; display:table; }
+							  .label { white-space:nowrap; display:table-cell; width:1px; } 
+							  .cartlabel { white-space:nowrap; display:table-cell; width:1px; float:left;} 
+							  .data { border-bottom: solid 1px black; font-weight:normal; width="100%";text-align:center; margin-left:10px; white-space:nowrap; display:table-cell; } 
+							  .row { display:table-row; }
+							</style> 
+		
+							<div class="namecol"> 
+							  <div class="field"> 
+								<div class="row"> 
+								  <div class="label">First Name:</div> 
+								  <div class="data"></div> 
+								</div>
+							  </div>
+							  <div class="field"> 
+								<div class="row"> 
+								  <div class="label">Family Name:</div> 
+								  <div class="data"></div> 
+								</div>
+							  </div>
+							  <div class="field"> 
+								<div class="row"> 
+								  <div class="label">Player ID:</div> 
+								  <div class="data"></div> 
+								</div>
+							  </div>
+							  <div class="field"> 
+								<div class="row"> 
+								  <div class="label">Date of Birth:</div> 
+								  <div class="data"></div> 
+								</div>
+							  </div>
+							  <div class="field"> 
+								<div class="row"> 
+								  <div class="label">Age Division:	Juniors <input type="checkbox"> Seniors <input type="checkbox"> Masters <input type="checkbox"></input></div>
+								</div>
+							  </div>
+							</div>
+							<br>
+						</div>
+						   <div id="secondary">
+							<div class="namecol"> 
+							  <div class="field"> 
+								<div class="row"> 
+								  <div class="label">Event Dates</div> 
+								  <div class="data"></div> 
+								</div>
+							  </div>
+							  <div class="field"> 
+								<div class="row"> 
+								  <div class="label">Event Name:</div> 
+								  <div class="data"></div> 
+								</div>
+							  </div>
+							  <div class="field"> 
+								<div class="row"> 
+								  <div class="label">Switch Profile Name:</div>
+								  <div class="data"></div> 
+								</div>
+							  </div>
+							  <div class="field"> 
+								<div class="row"> 
+								  <div class="label">Battle Team:</div> 
+								  <div class="data"></div> 
+								</div>
+							  </div>
+							  <div class="field"> 
+								<div class="row"> 
+								  <div class="cartlabel"></div> 
+								</div>
+							  </div>
+							</div>
+						   </div>
 	           	<br>
 	        </div>
         </div>
@@ -174,8 +165,8 @@
                 <table class="ptable">
                     <tr><th class="label">Pokemon</th><td id="pokemon" class="value">&nbsp;</td>
                     	<td class="label"></td><td id="gender" class = "value"></td></tr>
-                    <tr><th class="label">Nature</th><td id="nature" class="value">&nbsp;</td>
-                    	<td class="label">Lv</td><td id="level" class = "value"></td></tr>
+						<tr><th class="gigantamax" colspan="2">Gigantamax <input id="gigantamaxCheckbox" type="checkbox">&nbsp;</td>
+							<td class="label">Lv</td><td id="level" class = "value"></td></tr>
                     <tr><th class="label">Ability</th><td id="ability" class="value">&nbsp;</td>
                     	<td class="label">HP</td><td id="hp" class = "value"></td></tr>
                     <tr><th class="label">Held Item</th><td id="heldItem" class="value">&nbsp;</td>
@@ -194,50 +185,8 @@
                 <table class="ptable">
                     <tr><th class="label">Pokemon</th><td id="pokemon" class="value">&nbsp;</td>
                     	<td class="label"></td><td id="gender" class = "value"></td></tr>
-                    <tr><th class="label">Nature</th><td id="nature" class="value">&nbsp;</td>
-                    	<td class="label">Lv</td><td id="level" class = "value"></td></tr>
-                    <tr><th class="label">Ability</th><td id="ability" class="value">&nbsp;</td>
-                    	<td class="label">HP</td><td id="hp" class = "value"></td></tr>
-                    <tr><th class="label">Held Item</th><td id="heldItem" class="value">&nbsp;</td>
-                    	<td class="label">Att</td><td id="atk" class = "value"></td></tr>
-                    <tr><th class="label">Move 1</th><td id="move1" class="value">&nbsp;</td>
-                    	<td class="label">Def</td><td id="def" class = "value"></td></tr>
-                    <tr><th class="label">Move 2</th><td id="move2" class="value">&nbsp;</td>
-                    	<td class="label">S. Att</td><td id="spatk" class = "value"></td></tr>
-                    <tr><th class="label">Move 3</th><td id="move3" class="value">&nbsp;</td>
-                    	<td class="label">S. Def</td><td id="spdef" class = "value"></td></tr>
-                    <tr><th class="label">Move 4</th><td id="move4" class="value">&nbsp;</td>
-                    	<td class="label">Spe</td><td id="spe" class = "value"></td></tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td class="space-entry">
-                <table class="ptable">
-                    <tr><th class="label">Pokemon</th><td id="pokemon" class="value">&nbsp;</td>
-                    	<td class="label"></td><td id="gender" class = "value"></td></tr>
-                    <tr><th class="label">Nature</th><td id="nature" class="value">&nbsp;</td>
-                    	<td class="label">Lv</td><td id="level" class = "value"></td></tr>
-                    <tr><th class="label">Ability</th><td id="ability" class="value">&nbsp;</td>
-                    	<td class="label">HP</td><td id="hp" class = "value"></td></tr>
-                    <tr><th class="label">Held Item</th><td id="heldItem" class="value">&nbsp;</td>
-                    	<td class="label">Att</td><td id="atk" class = "value"></td></tr>
-                    <tr><th class="label">Move 1</th><td id="move1" class="value">&nbsp;</td>
-                    	<td class="label">Def</td><td id="def" class = "value"></td></tr>
-                    <tr><th class="label">Move 2</th><td id="move2" class="value">&nbsp;</td>
-                    	<td class="label">S. Att</td><td id="spatk" class = "value"></td></tr>
-                    <tr><th class="label">Move 3</th><td id="move3" class="value">&nbsp;</td>
-                    	<td class="label">S. Def</td><td id="spdef" class = "value"></td></tr>
-                    <tr><th class="label">Move 4</th><td id="move4" class="value">&nbsp;</td>
-                    	<td class="label">Spe</td><td id="spe" class = "value"></td></tr>
-                </table>
-            </td>
-            <td class="space-entry">
-                <table class="ptable">
-                    <tr><th class="label">Pokemon</th><td id="pokemon" class="value">&nbsp;</td>
-                    	<td class="label"></td><td id="gender" class = "value"></td></tr>
-                    <tr><th class="label">Nature</th><td id="nature" class="value">&nbsp;</td>
-                    	<td class="label">Lv</td><td id="level" class = "value"></td></tr>
+						<tr><th class="gigantamax" colspan="2">Gigantamax <input id="gigantamaxCheckbox" type="checkbox">&nbsp;</td>
+							<td class="label">Lv</td><td id="level" class = "value"></td></tr>
                     <tr><th class="label">Ability</th><td id="ability" class="value">&nbsp;</td>
                     	<td class="label">HP</td><td id="hp" class = "value"></td></tr>
                     <tr><th class="label">Held Item</th><td id="heldItem" class="value">&nbsp;</td>
@@ -258,8 +207,8 @@
                 <table class="ptable">
                     <tr><th class="label">Pokemon</th><td id="pokemon" class="value">&nbsp;</td>
                     	<td class="label"></td><td id="gender" class = "value"></td></tr>
-                    <tr><th class="label">Nature</th><td id="nature" class="value">&nbsp;</td>
-                    	<td class="label">Lv</td><td id="level" class = "value"></td></tr>
+						<tr><th class="gigantamax" colspan="2">Gigantamax <input id="gigantamaxCheckbox" type="checkbox">&nbsp;</td>
+							<td class="label">Lv</td><td id="level" class = "value"></td></tr>
                     <tr><th class="label">Ability</th><td id="ability" class="value">&nbsp;</td>
                     	<td class="label">HP</td><td id="hp" class = "value"></td></tr>
                     <tr><th class="label">Held Item</th><td id="heldItem" class="value">&nbsp;</td>
@@ -278,8 +227,50 @@
                 <table class="ptable">
                     <tr><th class="label">Pokemon</th><td id="pokemon" class="value">&nbsp;</td>
                     	<td class="label"></td><td id="gender" class = "value"></td></tr>
-                    <tr><th class="label">Nature</th><td id="nature" class="value">&nbsp;</td>
-                    	<td class="label">Lv</td><td id="level" class = "value"></td></tr>
+						<tr><th class="gigantamax" colspan="2">Gigantamax <input id="gigantamaxCheckbox" type="checkbox">&nbsp;</td>
+							<td class="label">Lv</td><td id="level" class = "value"></td></tr>
+                    <tr><th class="label">Ability</th><td id="ability" class="value">&nbsp;</td>
+                    	<td class="label">HP</td><td id="hp" class = "value"></td></tr>
+                    <tr><th class="label">Held Item</th><td id="heldItem" class="value">&nbsp;</td>
+                    	<td class="label">Att</td><td id="atk" class = "value"></td></tr>
+                    <tr><th class="label">Move 1</th><td id="move1" class="value">&nbsp;</td>
+                    	<td class="label">Def</td><td id="def" class = "value"></td></tr>
+                    <tr><th class="label">Move 2</th><td id="move2" class="value">&nbsp;</td>
+                    	<td class="label">S. Att</td><td id="spatk" class = "value"></td></tr>
+                    <tr><th class="label">Move 3</th><td id="move3" class="value">&nbsp;</td>
+                    	<td class="label">S. Def</td><td id="spdef" class = "value"></td></tr>
+                    <tr><th class="label">Move 4</th><td id="move4" class="value">&nbsp;</td>
+                    	<td class="label">Spe</td><td id="spe" class = "value"></td></tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="space-entry">
+                <table class="ptable">
+                    <tr><th class="label">Pokemon</th><td id="pokemon" class="value">&nbsp;</td>
+                    	<td class="label"></td><td id="gender" class = "value"></td></tr>
+						<tr><th class="gigantamax" colspan="2">Gigantamax <input id="gigantamaxCheckbox" type="checkbox">&nbsp;</td>
+							<td class="label">Lv</td><td id="level" class = "value"></td></tr>
+                    <tr><th class="label">Ability</th><td id="ability" class="value">&nbsp;</td>
+                    	<td class="label">HP</td><td id="hp" class = "value"></td></tr>
+                    <tr><th class="label">Held Item</th><td id="heldItem" class="value">&nbsp;</td>
+                    	<td class="label">Att</td><td id="atk" class = "value"></td></tr>
+                    <tr><th class="label">Move 1</th><td id="move1" class="value">&nbsp;</td>
+                    	<td class="label">Def</td><td id="def" class = "value"></td></tr>
+                    <tr><th class="label">Move 2</th><td id="move2" class="value">&nbsp;</td>
+                    	<td class="label">S. Att</td><td id="spatk" class = "value"></td></tr>
+                    <tr><th class="label">Move 3</th><td id="move3" class="value">&nbsp;</td>
+                    	<td class="label">S. Def</td><td id="spdef" class = "value"></td></tr>
+                    <tr><th class="label">Move 4</th><td id="move4" class="value">&nbsp;</td>
+                    	<td class="label">Spe</td><td id="spe" class = "value"></td></tr>
+                </table>
+            </td>
+            <td class="space-entry">
+                <table class="ptable">
+                    <tr><th class="label">Pokemon</th><td id="pokemon" class="value">&nbsp;</td>
+                    	<td class="label"></td><td id="gender" class = "value"></td></tr>
+						<tr><th class="gigantamax" colspan="2">Gigantamax <input id="gigantamaxCheckbox" type="checkbox">&nbsp;</td>
+							<td class="label">Lv</td><td id="level" class = "value"></td></tr>
                     <tr><th class="label">Ability</th><td id="ability" class="value">&nbsp;</td>
                     	<td class="label">HP</td><td id="hp" class = "value"></td></tr>
                     <tr><th class="label">Held Item</th><td id="heldItem" class="value">&nbsp;</td>
@@ -300,13 +291,11 @@
     <p id="warning"><u><b>Notes:</b></u><br>
 	Please fill out this Team List using the language to which the player's game is set.<br>
 	<br>
-	This team list must match the Battle Team used in the listed event exactly. <b>All Pokémon must be listed exactly as they appear in the in-game Battle Team, including stats and<br>
-	attack order.</b> If the information on this sheet does not match the Battle Team exactly, penalties may be incurred.<br>
+	All Pokémon must be listed exactly as the appear in the Battle Team, <b>at the level they are in the game.</b> If they are not, penalties may be incurred.<br>
 	<br>
-	If your Pokémon is of a particular <b>Forme</b> (e.g. Landorus–Therian), <b>Regional Variant</b> (e.g. Alolan Persian), is the size of a <b>Totem Pokémon</b> (e.g. Totem Araquanid), <b>etc.</b>, include this in<br>
-	the "Pokémon" field<br>
+	If your Pokémon is of a particular <b>Forme</b> (e.g. Rotom-Wash), or a <b>Regional Variant</b> (e.g. Galarian Rapidash) include this in the "Pokémon" field<br>
 	<br>
-	If any of your Pokémon have the move <b>Hidden Power</b>, write it as "HP (X)", with the (X) stating the Type—for example "HP (Fire)". 
+	Check the box under "Gigantamax" if your Pokémon has the Gigantamax factor. 
 	</p>
 	</body>
 </html>
