@@ -1,0 +1,55 @@
+body{
+    background-color: #282828;
+}
+
+h1
+{
+    color: honeydew;
+    margin: auto;
+    width: 10%;
+}
+
+table{
+    padding: 15%;
+}
+
+tr
+{
+    width: 200px;
+}
+
+.pokemon{
+    width: 10%;
+}
+
+.week{
+    width: 10%;
+}
+
+.opponent{
+    width: 20%;
+}
+
+.replays{
+    width: 10%;
+}
+
+.card-header{
+    background-color: #686868;
+}
+
+.card-body{
+    background-color: #888888;
+}
+
+.btn-link{
+    color:darkgoldenrod;
+}
+
+a{
+    color:goldenrod;
+}
+
+.jumbotron{
+    background-color: #484848;
+}
